@@ -1,0 +1,6 @@
+google-api-python-client
+aiohttp
+pandas
+python-dotenv
+isodate
+pytz
