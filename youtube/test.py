@@ -4,9 +4,13 @@ import sqlite3
 from dotenv import load_dotenv
 from collectors import YouTubeCollector, AsyncYouTubeCollector, QuotaManager, GoogleClientWrapper
 from datetime import datetime, timedelta
+import pytz
 
 import pandas as pd
 pd.set_option('display.max_columns', None)
+
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "youtube-data")
@@ -127,7 +131,7 @@ target_keywords = {
 }
 
 selected_tiers = [
-    "tier_0_ru",
+    #"tier_0_ru",
     #"tier_1_ru",
     #"tier_1_en",
     #"tier_2_ru",
@@ -187,10 +191,114 @@ api_wrapper = GoogleClientWrapper(
 )
 
 
+def run_sync():
+    collector = YouTubeCollector(api_wrapper, conn=conn)
+    cursor = conn.cursor()
+    pacific = pytz.timezone("US/Pacific")
+    utc_now = datetime.utcnow().replace(tzinfo=pytz.utc)
+    pac_now = utc_now.astimezone(pacific)
+
+    collected_video_ids = set()
+
+    def is_daily_window():
+        return pac_now.hour > 0 or (pac_now.hour == 0 and pac_now.minute >= 30)
+
+    # ==========================
+    # FIRST RUN — COLLECT ALL CHANNELS IF VIDEOS EMPTY
+    # ==========================
+    cursor.execute("SELECT COUNT(1) FROM videos_main")
+    video_count = cursor.fetchone()[0]
+
+    if video_count == 0:
+        print("First run: collecting videos for all channels (last 90 days)")
+        cursor.execute("SELECT DISTINCT channel_id FROM channels_main LIMIT 100")
+        all_channels = [r[0] for r in cursor.fetchall()]
+
+        if all_channels:
+            new_video_ids = collector.get_channel_videos(
+                all_channels,
+                max_videos=100,
+                until_date=datetime.utcnow() - timedelta(days=90)
+            )
+            collected_video_ids.update(new_video_ids)
+
+    # =====================================================
+    # STEP 1 — SEARCH NEW VIDEOS
+    # =====================================================
+    try:
+        if search_list:
+            print("STEP 1: search videos")
+            search_df = collector.search_videos(search_list, max_pages=1)
+            if not search_df.empty:
+                new_channels = search_df["channel_id"].unique().tolist()
+                collector.get_channel_details(new_channels)
+                new_video_ids = collector.get_channel_videos(
+                    new_channels,
+                    max_videos=100,
+                    until_date=datetime.utcnow() - timedelta(days=90)
+                )
+                collected_video_ids.update(new_video_ids)
+    except Exception as e:
+        print("STEP 1 ERROR:", e)
+
+    # =====================================================
+    # STEP 2 — DAILY CHANNEL REFRESH
+    # =====================================================
+    try:
+        if is_daily_window():
+            print("STEP 2: daily channel refresh")
+
+            cursor.execute("""
+                SELECT channel_id
+                FROM channels_main
+                WHERE scraped_at < DATETIME('now', 'start of day')
+            """)
+            stale_channels = [r[0] for r in cursor.fetchall()]
+
+            cursor.execute("""
+                SELECT DISTINCT channel_id
+                FROM search_videos
+                WHERE scraped_at >= DATETIME('now', 'start of day')
+            """)
+            fresh_channels = [r[0] for r in cursor.fetchall()]
+
+            channels = list(set(stale_channels + fresh_channels))
+            print("Channels to refresh:", len(channels))
+
+            if channels:
+                collector.get_channel_details(channels)
+                new_video_ids = collector.get_channel_videos(channels)
+                collected_video_ids.update(new_video_ids)
+
+    except Exception as e:
+        print("STEP 2 ERROR:", e)
+
+    # =====================================================
+    # STEP 3 — HOURLY VIDEO STATS REFRESH
+    # =====================================================
+    try:
+        print("STEP 3: refresh video stats")
+        cursor.execute("""
+            SELECT DISTINCT video_id
+            FROM videos_main
+            WHERE published_at >= DATETIME('now', '-7 day')
+        """)
+        fresh_videos = {r[0] for r in cursor.fetchall()}
+
+        video_ids = list(fresh_videos | collected_video_ids)
+        print("Videos to refresh:", len(video_ids))
+
+        if video_ids:
+            collector.get_video_details(video_ids)
+
+    except Exception as e:
+        print("STEP 3 ERROR:", e)
+        
+        
 # ----------------------------
 # Синхронний запуск
 # ----------------------------
-def run_sync():
+def run_sync_():
     # ----------------------------
     # Ініціалізація Collector
     # ----------------------------
@@ -208,19 +316,19 @@ def run_sync():
     """
     
     # ----------------------------
-    # Пошук відео
+    # Пошук нових відео по ключам
     # ----------------------------
-    #search_df = collector.search_videos(search_list, max_pages=1)
-    #print("Search results:")
-    #print(search_df)
+    if search_list:
+        search_df = collector.search_videos(search_list, max_pages=1)
+        print("Search results added:")
+        print(search_df)
+        
+        new_channels = search_df["channel_id"].unique().tolist()
+        channels_cnt = collector.get_channel_details(new_channels)
+        print("Channel details added:", channels_cnt)
     
     # дістаємо канали з пошуку
     cursor = conn.cursor()
-    
-    # Отримуємо унікальні video_id
-    cursor.execute("SELECT DISTINCT video_id FROM search_videos")
-    searched_videos = [row[0] for row in cursor.fetchall()]
-    print("searched videos", len(searched_videos))
     
     # Отримуємо унікальні channel_id
     cursor.execute("SELECT DISTINCT channel_id FROM search_videos")
@@ -230,19 +338,10 @@ def run_sync():
     # ----------------------------
     # Отримання деталей каналів
     # ----------------------------
-    channels_df = collector.get_channel_details(searched_channels)
-    print("Channel details:")
-    print(channels_df)
+    channels_cnt = collector.get_channel_details(searched_channels)
+    print("Channel details:", channels_cnt)
     return
-    
-    # ----------------------------
-    # Отримання деталей відео
-    # ----------------------------
-    videos_df = collector.get_video_details(searched_videos)
-    print("Video details:")
-    print(videos_df)
-    return
-    
+
     # ----------------------------
     # Отримання останніх відео каналів (останні 90 днів)
     # ----------------------------
@@ -253,6 +352,22 @@ def run_sync():
     )
     print("Latest channel videos:")
     print(latest_df)
+    return
+
+    # Отримуємо унікальні video_id
+    cursor.execute("SELECT DISTINCT video_id FROM search_videos")
+    searched_videos = [row[0] for row in cursor.fetchall()]
+    print("searched videos", len(searched_videos))
+    
+    # ----------------------------
+    # Отримання деталей відео
+    # ----------------------------
+    videos_df = collector.get_video_details(searched_videos)
+    print("Video details:")
+    print(videos_df)
+    return
+    
+
     
     # ----------------------------
     # Отримання останніх shorts каналів (останні 90 днів)

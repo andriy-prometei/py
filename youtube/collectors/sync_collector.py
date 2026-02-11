@@ -340,7 +340,7 @@ class YouTubeCollector:
                 cols=["channel_id", "created_at", "firstly_scraped_at", "scraped_at", "uploads_playlist", "last_published_at"],
                 conflict_cols=["channel_id"]
             )
-        if False
+        if False:
             with self.lock:
                 self.conn.executemany("""
                     INSERT INTO channels_main(
@@ -451,64 +451,89 @@ class YouTubeCollector:
     # GE0 CHANNEL VIDEOS VIA UPLOADS PLAYLIST
     # ====================================================
     def get_channel_videos(self, channel_ids, max_videos=200, until_date=None):
-        channel_df = self.get_channel_details(channel_ids)
         all_video_ids = []
     
-        for _, row in channel_df.iterrows():
-            channel_id = row["channel_id"]
-            playlist = row["uploads_playlist"]
+        for channel_id in channel_ids:
+            # беремо uploads playlist
+            res = self.conn.execute(
+                "SELECT uploads_playlist, last_published_at FROM channels_main WHERE channel_id=?",
+                (channel_id,)
+            ).fetchone()
     
-            with self.conn:
-                res = self.conn.execute(
-                    "SELECT last_published_at FROM channels_main WHERE channel_id=?",
-                    (channel_id,)
-                ).fetchone()
-            last_pub = res[0] if res else None
+            if not res:
+                continue
+    
+            playlist_id, last_pub = res
+            if not playlist_id:
+                print(f"[WARN] Channel {channel_id} has no uploads playlist")
+                continue
+    
             stop_date = datetime.fromisoformat(last_pub) if last_pub else until_date
-    
             token = None
             collected = 0
+            
             while True:
                 params = {
                     "part": "snippet",
-                    "playlistId": playlist,
+                    "playlistId": playlist_id,
                     "maxResults": 50,
                     "pageToken": token
                 }
-                response = self.api.execute(
-                    lambda client, **p: client.playlistItems().list(**p),
-                    "playlistItems.list",
-                    params
-                )
-    
+                try:
+                    response = self.api.execute(
+                        lambda client, **p: client.playlistItems().list(**p),
+                        "playlistItems.list",
+                        params
+                    )
+                except Exception as e:
+                    print(f"[ERROR] Cannot fetch playlist {playlist_id} for channel {channel_id}: {e}")
+                    break  # переходимо до наступного каналу
+            
+                stop_loop = False  # прапорець виходу з while
+            
                 for item in response.get("items", []):
                     pub_str = item["snippet"]["publishedAt"].replace("Z", "")
                     pub_dt = datetime.fromisoformat(pub_str.split(".")[0])
+            
                     if stop_date and pub_dt <= stop_date:
-                        continue
+                        stop_loop = True  # старі відео — більше не треба далі
+                        break  # виходимо з for
+            
                     vid_id = item["snippet"]["resourceId"]["videoId"]
                     all_video_ids.append(vid_id)
+            
+                    # оновлюємо last_published_at
+                    self.conn.execute(
+                        "UPDATE channels_main SET last_published_at=? WHERE channel_id=?",
+                        (pub_dt.isoformat(), channel_id)
+                    )
                     collected += 1
                     if collected >= max_videos:
+                        stop_loop = True
                         break
+
+    self.conn.commit()
+
+    if stop_loop:
+        break  # вихід з while
+
+    token = response.get("nextPageToken")
+    if not token:
+        break
+
+    self.conn.commit()
+
+    if stop_loop:
+        break  # вихід з while
+
+    token = response.get("nextPageToken")
+    if not token:
+        break
     
-                token = response.get("nextPageToken")
-                if not token or collected >= max_videos:
-                    break
+            self.conn.commit()
     
-        videos_df = self.get_video_details(all_video_ids)
-    
-        # Оновлюємо last_published_at
-        for channel_id in channel_ids:
-            ch_videos = videos_df[videos_df["channel_id"] == channel_id]
-            if not ch_videos.empty:
-                max_pub = ch_videos["published_at"].max()
-                self.conn.execute(
-                    "UPDATE channels_main SET last_published_at=? WHERE channel_id=?",
-                    (max_pub, channel_id)
-                )
-        self.conn.commit()
-        return videos_df
+        # повертаємо всі знайдені відео
+        return all_video_ids
     
     # ====================================================
     # GET RELATED VIDEOS
