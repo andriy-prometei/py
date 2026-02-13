@@ -1,6 +1,8 @@
+import os
+import json
 import sqlite3
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 import threading
 import isodate
 
@@ -394,6 +396,12 @@ class YouTubeCollector:
                                         "videos.list", params)
 
             now = self._utc_now()
+            
+            # debug
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            file_path = os.path.join(script_dir, f"-videos.json")
+            with open(file_path, "w", encoding="utf-8") as f:
+                json.dump(response, f, ensure_ascii=False, indent=2)
 
             for item in response.get("items", []):
                 vid = item["id"]
@@ -451,27 +459,36 @@ class YouTubeCollector:
     # GE0 CHANNEL VIDEOS VIA UPLOADS PLAYLIST
     # ====================================================
     def get_channel_videos(self, channel_ids, max_videos=200, until_date=None):
+        """
+        Збирає відео каналів з uploads playlist.
+        - Перший запуск: until_date = datetime.utcnow() - timedelta(days=90)
+        - Після цього: до last_published_at
+        - Оновлює last_published_at у channels_main
+        - Повертає список всіх знайдених video_id
+        """
         all_video_ids = []
-    
+
         for channel_id in channel_ids:
-            # беремо uploads playlist
+            # беремо uploads playlist та останнє опубліковане відео
             res = self.conn.execute(
                 "SELECT uploads_playlist, last_published_at FROM channels_main WHERE channel_id=?",
                 (channel_id,)
             ).fetchone()
-    
+
             if not res:
                 continue
-    
+
             playlist_id, last_pub = res
             if not playlist_id:
                 print(f"[WARN] Channel {channel_id} has no uploads playlist")
                 continue
-    
-            stop_date = datetime.fromisoformat(last_pub) if last_pub else until_date
+
+            # stop_date як naive datetime
+            stop_date = datetime.strptime(last_pub, "%Y-%m-%d %H:%M:%S") if last_pub else until_date
             token = None
             collected = 0
-            
+
+            is_last_published_at_set = False
             while True:
                 params = {
                     "part": "snippet",
@@ -479,117 +496,64 @@ class YouTubeCollector:
                     "maxResults": 50,
                     "pageToken": token
                 }
+
                 try:
                     response = self.api.execute(
                         lambda client, **p: client.playlistItems().list(**p),
                         "playlistItems.list",
                         params
                     )
+                    
+                    # debug
+                    """
+                    script_dir = os.path.dirname(os.path.abspath(__file__))
+                    file_path = os.path.join(script_dir, f"{playlist_id}.json")
+                    with open(file_path, "w", encoding="utf-8") as f:
+                        json.dump(response, f, ensure_ascii=False, indent=2)
+                    """
+        
                 except Exception as e:
                     print(f"[ERROR] Cannot fetch playlist {playlist_id} for channel {channel_id}: {e}")
                     break  # переходимо до наступного каналу
-            
-                stop_loop = False  # прапорець виходу з while
-            
+
+                stop_loop = False
+
                 for item in response.get("items", []):
-                    pub_str = item["snippet"]["publishedAt"].replace("Z", "")
-                    pub_dt = datetime.fromisoformat(pub_str.split(".")[0])
-            
+                    # форматуємо дату YYYY-MM-DD HH:MM:SS
+                    pub_str = item["snippet"]["publishedAt"].split(".")[0].rstrip("Z")
+                    pub_dt = datetime.strptime(pub_str.replace("T", " "), "%Y-%m-%d %H:%M:%S")
+                    
+                    # оновлюємо last_published_at на найсвіжіше відео
+                    if not is_last_published_at_set:
+                        self.conn.execute(
+                            "UPDATE channels_main SET last_published_at=? WHERE channel_id=?",
+                            (pub_dt.strftime("%Y-%m-%d %H:%M:%S"), channel_id)
+                        )
+                        is_last_published_at_set = True
+
+                    # зупиняємось, якщо старіше stop_date
                     if stop_date and pub_dt <= stop_date:
-                        stop_loop = True  # старі відео — більше не треба далі
-                        break  # виходимо з for
-            
+                        stop_loop = True
+                        break
+
                     vid_id = item["snippet"]["resourceId"]["videoId"]
                     all_video_ids.append(vid_id)
-            
-                    # оновлюємо last_published_at
-                    self.conn.execute(
-                        "UPDATE channels_main SET last_published_at=? WHERE channel_id=?",
-                        (pub_dt.isoformat(), channel_id)
-                    )
+
                     collected += 1
                     if collected >= max_videos:
                         stop_loop = True
                         break
 
-    self.conn.commit()
+                self.conn.commit()  # коміт після обробки сторінки
 
-    if stop_loop:
-        break  # вихід з while
-
-    token = response.get("nextPageToken")
-    if not token:
-        break
-
-    self.conn.commit()
-
-    if stop_loop:
-        break  # вихід з while
-
-    token = response.get("nextPageToken")
-    if not token:
-        break
-    
-            self.conn.commit()
-    
-        # повертаємо всі знайдені відео
-        return all_video_ids
-    
-    # ====================================================
-    # GET RELATED VIDEOS
-    # ====================================================
-    def get_related_videos(self, video_ids, max_related=50):
-        rows = []
-
-        for src_vid in video_ids:
-            token = None
-            collected = 0
-            position = 0
-
-            while True:
-                params = {
-                    "part": "id,snippet",   # <-- FIX
-                    "relatedToVideoId": src_vid,
-                    "type": "video",
-                    "maxResults": 50,
-                    "pageToken": token
-                }
-
-                response = self.api.execute(
-                    lambda client, **p: client.search().list(**p),
-                    "search.list",
-                    params
-                )
-
-                for item in response.get("items", []):
-                    position += 1
-
-                    related_vid = item["id"]["videoId"]
-
-                    row = {
-                        "video_id": related_vid,
-                        "src_video_id": src_vid,
-                        "keyword": '',
-                        "language": '',
-                        "region": '',
-                        "channel_id": item["snippet"].get("channelId", ''),
-                        "position": position,
-                        "scraped_at": self._utc_now()
-                    }
-
-                    rows.append(self._prepare_row(row))
-                    collected += 1
-
-                    if collected >= max_related:
-                        break
+                if stop_loop:
+                    break  # вихід з while
 
                 token = response.get("nextPageToken")
-                if not token or collected >= max_related:
-                    break
+                if not token:
+                    break  # більше сторінок нема
 
-        df = pd.DataFrame(rows)
-        self._upsert_df(df, "search_videos")
-        return df
+        return all_video_ids
     
 # ====================================================
     # GET CHANNEL SHORTS VIA SHORTS PLAYLIST (UUSH...)

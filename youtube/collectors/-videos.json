@@ -1,0 +1,1288 @@
+{
+  "kind": "youtube#videoListResponse",
+  "etag": "6tbyjt6cvf_j_6e3jUaKJCTwqc0",
+  "items": [
+    {
+      "kind": "youtube#video",
+      "etag": "kkNi7iyfTPoVXA6Sl4mL3t3jiWg",
+      "id": "2XHPGeGpDVI",
+      "snippet": {
+        "publishedAt": "2026-02-11T21:00:51Z",
+        "channelId": "UCc2J9DJeaBVaTzIuFlUMdQg",
+        "title": "БЫЧИЙ БРЕЙКЕР #смартмани",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2XHPGeGpDVI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2XHPGeGpDVI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2XHPGeGpDVI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2XHPGeGpDVI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/2XHPGeGpDVI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "SanchoDT",
+        "tags": [
+          "Брейкер",
+          "Брейкер Блок",
+          "Breaker Block",
+          "Breaker",
+          "Demand",
+          "Supply",
+          "Зона поддержки",
+          "Зона сопротивления",
+          "Смарт мани"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "БЫЧИЙ БРЕЙКЕР #смартмани",
+          "description": ""
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT37S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "4319",
+        "likeCount": "155",
+        "favoriteCount": "0",
+        "commentCount": "2"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "RKI8b-pAkWcD25qm_4sb9X4AZ7M",
+      "id": "_DOIBGcA5oo",
+      "snippet": {
+        "publishedAt": "2026-02-02T17:32:03Z",
+        "channelId": "UCc2J9DJeaBVaTzIuFlUMdQg",
+        "title": "БРЕЙКЕР С НУЛЯ | СМАРТ МАНИ",
+        "description": "Мой телеграм канал: https://t.me/SANCHO_DT\n\nВ этом видео вы узнаете:\n\n- Что такое Брейкер и в чем логика его работы;\n- Как он формируется и определяется;\n- Как его торговать: четыре лучших входа и выбор между агрессивным и консервативным стоп-лоссом;\n- Как определять ключевые и промежуточные цели для постановки тейков;\n- А также чек-лист для А+ сетапа на основе Брейкера.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/_DOIBGcA5oo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/_DOIBGcA5oo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/_DOIBGcA5oo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/_DOIBGcA5oo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/_DOIBGcA5oo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "SanchoDT",
+        "tags": [
+          "брейкер",
+          "брейкер блок",
+          "смарт мани",
+          "санчо дт",
+          "sancho dt"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "БРЕЙКЕР С НУЛЯ | СМАРТ МАНИ",
+          "description": "Мой телеграм канал: https://t.me/SANCHO_DT\n\nВ этом видео вы узнаете:\n\n- Что такое Брейкер и в чем логика его работы;\n- Как он формируется и определяется;\n- Как его торговать: четыре лучших входа и выбор между агрессивным и консервативным стоп-лоссом;\n- Как определять ключевые и промежуточные цели для постановки тейков;\n- А также чек-лист для А+ сетапа на основе Брейкера."
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT12M41S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "10667",
+        "likeCount": "1291",
+        "favoriteCount": "0",
+        "commentCount": "119"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "wSKnHrKqlBJq9BI35W2pFVpw7WQ",
+      "id": "dj0nhuMwkvU",
+      "snippet": {
+        "publishedAt": "2025-12-23T18:00:55Z",
+        "channelId": "UCc2J9DJeaBVaTzIuFlUMdQg",
+        "title": "Применение Криптовалют",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dj0nhuMwkvU/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dj0nhuMwkvU/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dj0nhuMwkvU/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dj0nhuMwkvU/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/dj0nhuMwkvU/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "SanchoDT",
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "Применение Криптовалют",
+          "description": ""
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT2M3S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1762",
+        "likeCount": "55",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "qV3eEHSgB1SoYvJeWwQ4jxfGfwY",
+      "id": "dl6OyAGG7qo",
+      "snippet": {
+        "publishedAt": "2025-12-22T05:00:53Z",
+        "channelId": "UCc2J9DJeaBVaTzIuFlUMdQg",
+        "title": "Перспективы Криптовалют",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dl6OyAGG7qo/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dl6OyAGG7qo/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dl6OyAGG7qo/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dl6OyAGG7qo/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/dl6OyAGG7qo/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "SanchoDT",
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "Перспективы Криптовалют",
+          "description": ""
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT2M14S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2619",
+        "likeCount": "63",
+        "favoriteCount": "0",
+        "commentCount": "3"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "f5y1Ik-w1MjFGHtKkTCEhKtvmr8",
+      "id": "HfKfz-sNuPQ",
+      "snippet": {
+        "publishedAt": "2025-12-20T20:00:13Z",
+        "channelId": "UCc2J9DJeaBVaTzIuFlUMdQg",
+        "title": "Что такое Халвинг",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/HfKfz-sNuPQ/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/HfKfz-sNuPQ/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/HfKfz-sNuPQ/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/HfKfz-sNuPQ/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/HfKfz-sNuPQ/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "SanchoDT",
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "Что такое Халвинг",
+          "description": ""
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT1M16S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "2291",
+        "likeCount": "50",
+        "favoriteCount": "0",
+        "commentCount": "5"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "LaSn13RLV6qAnBpdNyFGqxN8JHk",
+      "id": "0yxoKFrq1x8",
+      "snippet": {
+        "publishedAt": "2026-01-30T10:49:16Z",
+        "channelId": "UCisHpO0gHidVp6THoHvGPTA",
+        "title": "30 января 2026 г.",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0yxoKFrq1x8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0yxoKFrq1x8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0yxoKFrq1x8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/0yxoKFrq1x8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/0yxoKFrq1x8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "RAYTOP | Влад Афанасьев",
+        "categoryId": "17",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "30 января 2026 г.",
+          "description": ""
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT59S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "1152",
+        "likeCount": "18",
+        "favoriteCount": "0",
+        "commentCount": "1"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "tM26JsSfmEYrPFUSPqCUGgQNSOY",
+      "id": "X1JGqcmqQvA",
+      "snippet": {
+        "publishedAt": "2026-01-19T12:17:47Z",
+        "channelId": "UCisHpO0gHidVp6THoHvGPTA",
+        "title": "Результат не ощущается сразу",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/X1JGqcmqQvA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/X1JGqcmqQvA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/X1JGqcmqQvA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/X1JGqcmqQvA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/X1JGqcmqQvA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "RAYTOP | Влад Афанасьев",
+        "tags": [
+          "бег",
+          "легкая атлетика",
+          "как правильно бегать",
+          "бег для начинающих",
+          "как не травмироваться при беге",
+          "для чего нужен бег",
+          "чем полезен бег"
+        ],
+        "categoryId": "17",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "Результат не ощущается сразу",
+          "description": ""
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "812",
+        "likeCount": "4",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "2BPENxiRCo67xLiFmClGi2sdl1k",
+      "id": "CxwwOAHz36g",
+      "snippet": {
+        "publishedAt": "2026-01-19T12:17:37Z",
+        "channelId": "UCisHpO0gHidVp6THoHvGPTA",
+        "title": "Зоны не работают сами по себе",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/CxwwOAHz36g/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/CxwwOAHz36g/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/CxwwOAHz36g/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/CxwwOAHz36g/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/CxwwOAHz36g/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "RAYTOP | Влад Афанасьев",
+        "tags": [
+          "бег",
+          "легкая атлетика",
+          "как правильно бегать",
+          "бег для начинающих",
+          "как не травмироваться при беге",
+          "для чего нужен бег",
+          "чем полезен бег"
+        ],
+        "categoryId": "17",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "Зоны не работают сами по себе",
+          "description": ""
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT6S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "926",
+        "likeCount": "6",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "cW0ZBphXDhiWmSqRV5yaIMHs6ow",
+      "id": "nG0bcA8LEC8",
+      "snippet": {
+        "publishedAt": "2026-01-19T12:17:26Z",
+        "channelId": "UCisHpO0gHidVp6THoHvGPTA",
+        "title": "Энергетические системы перегружены",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/nG0bcA8LEC8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/nG0bcA8LEC8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/nG0bcA8LEC8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/nG0bcA8LEC8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/nG0bcA8LEC8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "RAYTOP | Влад Афанасьев",
+        "tags": [
+          "бег",
+          "легкая атлетика",
+          "как правильно бегать",
+          "бег для начинающих",
+          "как не травмироваться при беге",
+          "для чего нужен бег",
+          "чем полезен бег"
+        ],
+        "categoryId": "17",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "Энергетические системы перегружены",
+          "description": ""
+        },
+        "defaultAudioLanguage": "en"
+      },
+      "contentDetails": {
+        "duration": "PT6S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "98",
+        "likeCount": "1",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "CyzMPZRjAjnggV33grhetd5JmKg",
+      "id": "DaNGD3o5EQY",
+      "snippet": {
+        "publishedAt": "2026-01-19T12:17:14Z",
+        "channelId": "UCisHpO0gHidVp6THoHvGPTA",
+        "title": "Причина не в слабом сердце",
+        "description": "",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/DaNGD3o5EQY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/DaNGD3o5EQY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/DaNGD3o5EQY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/DaNGD3o5EQY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/DaNGD3o5EQY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "RAYTOP | Влад Афанасьев",
+        "tags": [
+          "бег",
+          "легкая атлетика",
+          "как правильно бегать",
+          "бег для начинающих",
+          "как не травмироваться при беге",
+          "для чего нужен бег",
+          "чем полезен бег"
+        ],
+        "categoryId": "17",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "Причина не в слабом сердце",
+          "description": ""
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT7S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "688",
+        "likeCount": "5",
+        "favoriteCount": "0",
+        "commentCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "miptWr1F7cZgBW3cNiOqq_4G7Lw",
+      "id": "g5m0gc0g4jY",
+      "snippet": {
+        "publishedAt": "2025-12-19T02:18:06Z",
+        "channelId": "UC9ZoTj3kwkRL6lyML09lRsA",
+        "title": "ЭТОТ Метод Технического и Свечного Анализа Всегда Работает и Приносит ПРИБЫЛЬ!",
+        "description": "❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nВ этом видео мы рассмотрим простой метод технического и свечного анализа, который всегда приносит прибыль. Это единственный алгоритм технического анализа графика, который когда- либо понадобится новичку.\nВы узнаете, как использовать чистый график для анализа без индикаторов и объемов. Это эффективная методика технического и свечного анализа, которая поможет вам видеть конкретные зоны для торговли, чтобы извлекать прибыль даже если вы новичок в трейдинге.\nМЕТОД Технического и Свечного Анализа Который Всегда Работает и Приносит ПРИБЫЛЬ!",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/g5m0gc0g4jY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/g5m0gc0g4jY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/g5m0gc0g4jY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/g5m0gc0g4jY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/g5m0gc0g4jY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Ваш тренер по трейдингу",
+        "tags": [
+          "Ваш тренер по трейдингу",
+          "тренер по трейдингу",
+          "технический анализ",
+          "свечной анализ",
+          "прайс экшен",
+          "price action",
+          "анализ графика трейдинг",
+          "трейдинг для чайников",
+          "японские свечи трейдинг",
+          "технический анализ в трейдинге",
+          "теханализ",
+          "технический анализ трейдинг",
+          "свечной анализ для новичков",
+          "прайс экшен трейдинг",
+          "свечной анализ обучение",
+          "теханализ криптовалют",
+          "теханализ обучение",
+          "теханализ с нуля",
+          "теханализ в трейдинге с нуля",
+          "теханализ для начинающих",
+          "технический анализ для начинающих"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "ЭТОТ Метод Технического и Свечного Анализа Всегда Работает и Приносит ПРИБЫЛЬ!",
+          "description": "❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nВ этом видео мы рассмотрим простой метод технического и свечного анализа, который всегда приносит прибыль. Это единственный алгоритм технического анализа графика, который когда- либо понадобится новичку.\nВы узнаете, как использовать чистый график для анализа без индикаторов и объемов. Это эффективная методика технического и свечного анализа, которая поможет вам видеть конкретные зоны для торговли, чтобы извлекать прибыль даже если вы новичок в трейдинге.\nМЕТОД Технического и Свечного Анализа Который Всегда Работает и Приносит ПРИБЫЛЬ!"
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT16M2S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "3570",
+        "likeCount": "186",
+        "favoriteCount": "0",
+        "commentCount": "11"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "5a7WmLBh-EqYLxSOQ7mmoKQybSU",
+      "id": "xVQAIWPjoEI",
+      "snippet": {
+        "publishedAt": "2025-12-09T22:33:51Z",
+        "channelId": "UC9ZoTj3kwkRL6lyML09lRsA",
+        "title": "Главная Ошибка Трейдеров, торгующих Свечные Паттерны",
+        "description": "Ошибка трейдеров, торгующих Свечные Паттерны. Вот почему один паттерн приносит прибыль,  а другой нет.\n\n❤️ Здесь учатся быстрее: https://youtu.be/8PX0Y8YTjYo |  Пиши в личку формат https://t.me/trenertrade\n⭐️ Брокер, который выводит деньги https://cutt.ly/JwKCz5PZ\n🔥 Бесплатный телеграм https://t.me/tradingcooach\n\nОНИ ВРАЛИ) Как пришел к таком методу анализа: https://youtu.be/5XLNpp-UpoU\nКак торговать сломы структуры https://youtu.be/ZWs0mV0rKtg\nПростейшая торговая стратегия: https://youtu.be/qEbNzISMB0g\nРАЗГОН ДЕПОЗИТА реальный : https://youtu.be/qgtiBiCemS4",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/xVQAIWPjoEI/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/xVQAIWPjoEI/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/xVQAIWPjoEI/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/xVQAIWPjoEI/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/xVQAIWPjoEI/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Ваш тренер по трейдингу",
+        "tags": [
+          "Ваш тренер по трейдингу",
+          "тренер по трейдингу",
+          "свечи трейдинг",
+          "трейдинг одно видео вместо тысячи книг",
+          "структура рынка форекс",
+          "свечные паттерны",
+          "торговые сетапы трейдинг",
+          "прайс экшен",
+          "прайс экшен стратегия",
+          "прайс экшен обучение",
+          "прайс экшен как читать график без",
+          "трейдинг без индикаторов",
+          "price action trading"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "Главная Ошибка Трейдеров, торгующих Свечные Паттерны",
+          "description": "Ошибка трейдеров, торгующих Свечные Паттерны. Вот почему один паттерн приносит прибыль,  а другой нет.\n\n❤️ Здесь учатся быстрее: https://youtu.be/8PX0Y8YTjYo |  Пиши в личку формат https://t.me/trenertrade\n⭐️ Брокер, который выводит деньги https://cutt.ly/JwKCz5PZ\n🔥 Бесплатный телеграм https://t.me/tradingcooach\n\nОНИ ВРАЛИ) Как пришел к таком методу анализа: https://youtu.be/5XLNpp-UpoU\nКак торговать сломы структуры https://youtu.be/ZWs0mV0rKtg\nПростейшая торговая стратегия: https://youtu.be/qEbNzISMB0g\nРАЗГОН ДЕПОЗИТА реальный : https://youtu.be/qgtiBiCemS4"
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT1M1S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "8498",
+        "likeCount": "172",
+        "favoriteCount": "0",
+        "commentCount": "2"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "znL5wyur9fadSlsna1cFdPSvagE",
+      "id": "C7K_dBRUxnc",
+      "snippet": {
+        "publishedAt": "2025-12-08T04:44:48Z",
+        "channelId": "UC9ZoTj3kwkRL6lyML09lRsA",
+        "title": "Удивительно, Насколько прост ЭТОТ Метод Технического и Свечного Анализа для Новичка",
+        "description": "В этом видео мы разбираем эффективную \"trading strategy\" для новичков, фокусируясь на чистом графике. Вы узнаете, как использовать \"price action\" и определять зоны \"support and resistance\" для успешного \"forex trading\". Мы покажем это на примере графика \"gbp usd\", чтобы вы смогли извлекать прибыль без лишних индикаторов.\n\n❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nЭто видео- лучшее руководство по простому Техническому Анализу для новичка. Руководство для начинающих как делать технический и свечной анализ графика новичку по порядку. Использовать будем чистый график без индикаторов. ТОлько структура и далее Price Action",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/C7K_dBRUxnc/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/C7K_dBRUxnc/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/C7K_dBRUxnc/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/C7K_dBRUxnc/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/C7K_dBRUxnc/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Ваш тренер по трейдингу",
+        "tags": [
+          "Ваш тренер по трейдингу",
+          "тренер по трейдингу",
+          "технический анализ",
+          "свечной анализ",
+          "прайс экшен",
+          "price action",
+          "анализ графика трейдинг",
+          "трейдинг для чайников",
+          "японские свечи трейдинг",
+          "технический анализ в трейдинге",
+          "теханализ",
+          "технический анализ трейдинг",
+          "свечной анализ для новичков",
+          "прайс экшен трейдинг",
+          "свечной анализ обучение",
+          "теханализ криптовалют",
+          "теханализ обучение",
+          "теханализ с нуля",
+          "теханализ в трейдинге с нуля",
+          "теханализ для начинающих",
+          "технический анализ для начинающих"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "Удивительно, Насколько прост ЭТОТ Метод Технического и Свечного Анализа для Новичка",
+          "description": "В этом видео мы разбираем эффективную \"trading strategy\" для новичков, фокусируясь на чистом графике. Вы узнаете, как использовать \"price action\" и определять зоны \"support and resistance\" для успешного \"forex trading\". Мы покажем это на примере графика \"gbp usd\", чтобы вы смогли извлекать прибыль без лишних индикаторов.\n\n❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nЭто видео- лучшее руководство по простому Техническому Анализу для новичка. Руководство для начинающих как делать технический и свечной анализ графика новичку по порядку. Использовать будем чистый график без индикаторов. ТОлько структура и далее Price Action"
+        },
+        "defaultAudioLanguage": "zxx"
+      },
+      "contentDetails": {
+        "duration": "PT22M22S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "3924",
+        "likeCount": "210",
+        "favoriteCount": "0",
+        "commentCount": "13"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "paMeEuvV8dS5PNjvGh3CY8dc0Fs",
+      "id": "gk3HiaK46Zg",
+      "snippet": {
+        "publishedAt": "2025-12-02T02:01:37Z",
+        "channelId": "UC9ZoTj3kwkRL6lyML09lRsA",
+        "title": "Единственный алгоритм теханализа графика, который когда-либо понадобится Новичку. Трейдинг с нуля",
+        "description": "❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nВ этом видео мы рассмотрим единственный алгоритм технического анализа графика, который когда- либо понадобится новичку\nВы узнаете, как использовать чистый график для анализа без индикаторов и объемов. Это эффективная методика технического и свечного анализа, которая поможет вам видеть конкретные зоны для торговли, чтобы извлекать прибыль даже если вы новичок в трейдинге.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/gk3HiaK46Zg/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/gk3HiaK46Zg/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/gk3HiaK46Zg/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/gk3HiaK46Zg/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/gk3HiaK46Zg/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Ваш тренер по трейдингу",
+        "tags": [
+          "Ваш тренер по трейдингу",
+          "тренер по трейдингу",
+          "технический анализ",
+          "свечной анализ",
+          "прайс экшен",
+          "price action",
+          "анализ графика трейдинг",
+          "трейдинг для чайников",
+          "японские свечи трейдинг",
+          "технический анализ в трейдинге",
+          "теханализ",
+          "технический анализ трейдинг",
+          "свечной анализ для новичков",
+          "прайс экшен трейдинг",
+          "свечной анализ обучение",
+          "теханализ криптовалют",
+          "теханализ обучение",
+          "теханализ с нуля",
+          "теханализ в трейдинге с нуля",
+          "теханализ для начинающих",
+          "технический анализ для начинающих"
+        ],
+        "categoryId": "22",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "Единственный алгоритм теханализа графика, который когда-либо понадобится Новичку. Трейдинг с нуля",
+          "description": "❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nВ этом видео мы рассмотрим единственный алгоритм технического анализа графика, который когда- либо понадобится новичку\nВы узнаете, как использовать чистый график для анализа без индикаторов и объемов. Это эффективная методика технического и свечного анализа, которая поможет вам видеть конкретные зоны для торговли, чтобы извлекать прибыль даже если вы новичок в трейдинге."
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT22M48S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": false,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "6054",
+        "likeCount": "295",
+        "favoriteCount": "0",
+        "commentCount": "32"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "tc6CqNU0uSSTlin7ssk8rNgvjIU",
+      "id": "qVTN_dw5cxw",
+      "snippet": {
+        "publishedAt": "2026-01-13T12:58:53Z",
+        "channelId": "UC5J6Do11WM_iKQ3uOPXd4Pg",
+        "title": "КУДА ИНВЕСТИРОВАТЬ В 2026 ГОДУ? Стоит ли входить в фондовый рынок? Инвестиции без паники",
+        "description": "✅ Бесплатное обучение про пассивный доход: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n\nКуда инвестировать в 2026 году? В этом видео делюсь своей стратегией инвестиций в условиях снижения ставки, высокой инфляции и нестабильной геополитики. Рассказываю, какие облигации еще дают высокий купон, как диверсифицироваться в валюте и стоит ли входить в фондовый рынок. Готовим портфель к 2026 году без паники. Подписывайтесь и смотрите до конца — обещаю, это будет полезно.\n\nКУДА ИНВЕСТИРОВАТЬ В 2026 ГОДУ? Стоит ли входить в фондовый рынок? Инвестиции без паники\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\nТАЙМКОДЫ:\n00:00 Портфель 2026\n2:10 Первый уровень: защита\n4:54 Второй уровень: валютная защита\n7:23 Третий уровень: ростовая часть\n9:12 Недвижимость\n11:05 Криптовалюта\n12:36 Сценарии ключевой ставки\n14:27 Итоги\n\n►Не забудьте подписаться на канал: https://clck.ru/TKeRK\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 год обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\n#инвестиции #новости  #дмитрийтолстяков #акции #облигации  #Пассивныйдоход ​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #валюта #ПрогнозДоллара #КурсДоллара #дивиденды #набиуллина #центральныйбанк #последниеновости #законы #законырф #новостисегодня",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/qVTN_dw5cxw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/qVTN_dw5cxw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/qVTN_dw5cxw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/qVTN_dw5cxw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/qVTN_dw5cxw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Дмитрий Толстяков",
+        "tags": [
+          "инвестиции 2026",
+          "куда инвестировать в 2026",
+          "фондовый рынок",
+          "рубль",
+          "пассивный доход",
+          "пассивный заработок",
+          "облигации",
+          "курс доллара",
+          "курс доллара прогноз",
+          "курс доллара на сегодня",
+          "ключевая ставка 2025",
+          "ставка цб",
+          "ключевая ставка",
+          "набиуллина",
+          "вклады",
+          "крипта",
+          "инвестиции в облигации",
+          "акции",
+          "куда вложить деньги",
+          "финансы",
+          "инвестиции",
+          "деньги",
+          "инвестиции с нуля",
+          "куда инвестировать деньги",
+          "недвижимость",
+          "рынок недвижимости",
+          "заработок",
+          "куда инвестировать",
+          "российские акции",
+          "лучшие облигации"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "КУДА ИНВЕСТИРОВАТЬ В 2026 ГОДУ? Стоит ли входить в фондовый рынок? Инвестиции без паники",
+          "description": "✅ Бесплатное обучение про пассивный доход: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n\nКуда инвестировать в 2026 году? В этом видео делюсь своей стратегией инвестиций в условиях снижения ставки, высокой инфляции и нестабильной геополитики. Рассказываю, какие облигации еще дают высокий купон, как диверсифицироваться в валюте и стоит ли входить в фондовый рынок. Готовим портфель к 2026 году без паники. Подписывайтесь и смотрите до конца — обещаю, это будет полезно.\n\nКУДА ИНВЕСТИРОВАТЬ В 2026 ГОДУ? Стоит ли входить в фондовый рынок? Инвестиции без паники\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\nТАЙМКОДЫ:\n00:00 Портфель 2026\n2:10 Первый уровень: защита\n4:54 Второй уровень: валютная защита\n7:23 Третий уровень: ростовая часть\n9:12 Недвижимость\n11:05 Криптовалюта\n12:36 Сценарии ключевой ставки\n14:27 Итоги\n\n►Не забудьте подписаться на канал: https://clck.ru/TKeRK\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 год обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\n#инвестиции #новости  #дмитрийтолстяков #акции #облигации  #Пассивныйдоход ​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #валюта #ПрогнозДоллара #КурсДоллара #дивиденды #набиуллина #центральныйбанк #последниеновости #законы #законырф #новостисегодня"
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT15M30S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "true",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "8481",
+        "likeCount": "380",
+        "favoriteCount": "0",
+        "commentCount": "37"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "sXcVUhNQfSb5nAb5imOrKhRP_vI",
+      "id": "YkgTV5RF8Pw",
+      "snippet": {
+        "publishedAt": "2025-12-30T10:00:08Z",
+        "channelId": "UC5J6Do11WM_iKQ3uOPXd4Pg",
+        "title": "ПОРТФЕЛЬ ДЛЯ ДОЧЕРЕЙ, ИТОГИ 2025 / Обновление и покупки",
+        "description": "✅ Если хотите начать формировать пассивный доход, ссылка на бесплатное обучение: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n✅ Мой новый канал про историю и финансы: https://www.youtube.com/@TolDocks\n\nНовый выпуск портфеля для моих дочерей. Анализ текущего состояния: доходности, блокировки активов, рост облигаций и падение акций. Покупки: облигации, золото, ВТБ, Сбер, Т, Novatek, Алроса и др. Стратегия диверсификации, причины решений, прогнозы по рынку и геополитике. Узнайте, как я инвестирую в долгосрок и к чему это ведёт! \n\n*Цены в приложении брокера на момент просмотра видео могут отличаться.\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\n00:58 Обзор портфеля\n07:50 Аналитика портфеля\n12:53 Покупка активов\n22:45 Итоги\n\nПОРТФЕЛЬ ДЛЯ ДОЧЕРЕЙ, ИТОГИ 2025 / Обновление и покупки\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 года обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\nинвестиции\nдивидендные акции\nкакие акции купить\nпассивный доход\nоблигации\nперспективные облигации\nпортфель для дочек\nпортфель для дочерей\n\n#инвестиции #портфельдлядочерей #дмитрийтолстяков #акции #облигации  #Пассивныйдоход #тинькоффинвестиции​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #тинькофф #валюта #комиссия #ПрогнозДоллара #КурсДоллара #газпром #дивиденды #набиуллина #центральныйбанк #последниеновости",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/YkgTV5RF8Pw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/YkgTV5RF8Pw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/YkgTV5RF8Pw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/YkgTV5RF8Pw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/YkgTV5RF8Pw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Дмитрий Толстяков",
+        "tags": [
+          "инвестиции для начинающих",
+          "дивидендные акции",
+          "дивиденды",
+          "как инвестировать деньги",
+          "инвестиции в акции",
+          "облигации",
+          "инвестиции в облигации",
+          "акции для инвестиций",
+          "как заработать на фондовом рынке",
+          "финансовая грамотность",
+          "как начать инвестировать",
+          "инвестиции в золото",
+          "фондовый рынок",
+          "как создать инвестиционный портфель",
+          "портфель из облигаций",
+          "инвестиции для детей",
+          "как выбрать акции",
+          "офз",
+          "пассивный доход",
+          "какие акции купить",
+          "инвестиции 2025",
+          "облигации 2025",
+          "облигации рф"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "ПОРТФЕЛЬ ДЛЯ ДОЧЕРЕЙ, ИТОГИ 2025 / Обновление и покупки",
+          "description": "✅ Если хотите начать формировать пассивный доход, ссылка на бесплатное обучение: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n✅ Мой новый канал про историю и финансы: https://www.youtube.com/@TolDocks\n\nНовый выпуск портфеля для моих дочерей. Анализ текущего состояния: доходности, блокировки активов, рост облигаций и падение акций. Покупки: облигации, золото, ВТБ, Сбер, Т, Novatek, Алроса и др. Стратегия диверсификации, причины решений, прогнозы по рынку и геополитике. Узнайте, как я инвестирую в долгосрок и к чему это ведёт! \n\n*Цены в приложении брокера на момент просмотра видео могут отличаться.\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\n00:58 Обзор портфеля\n07:50 Аналитика портфеля\n12:53 Покупка активов\n22:45 Итоги\n\nПОРТФЕЛЬ ДЛЯ ДОЧЕРЕЙ, ИТОГИ 2025 / Обновление и покупки\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 года обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\nинвестиции\nдивидендные акции\nкакие акции купить\nпассивный доход\nоблигации\nперспективные облигации\nпортфель для дочек\nпортфель для дочерей\n\n#инвестиции #портфельдлядочерей #дмитрийтолстяков #акции #облигации  #Пассивныйдоход #тинькоффинвестиции​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #тинькофф #валюта #комиссия #ПрогнозДоллара #КурсДоллара #газпром #дивиденды #набиуллина #центральныйбанк #последниеновости"
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT24M5S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "true",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "9100",
+        "likeCount": "527",
+        "favoriteCount": "0",
+        "commentCount": "70"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "CBZIUbhcPzgs5KZoN5u-YIbwKuw",
+      "id": "DhHUgeBmrkA",
+      "snippet": {
+        "publishedAt": "2025-12-18T15:01:01Z",
+        "channelId": "UC5J6Do11WM_iKQ3uOPXd4Pg",
+        "title": "НОВЫЕ ЗАКОНЫ ДЕКАБРЯ! Новый паспорт, пенсии и потеря жилья — эти изменения коснутся каждого",
+        "description": "✅ Бесплатное обучение про пассивный доход: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n\nВ декабре вступили в силу новые законы, которые затрагивают каждого из нас. Некоторые изменения на первый взгляд кажутся мелочью, но последствия могут быть серьёзными — в этом видео разберем популярные новости: цифровой паспорт, повышение утильсбора, потеря жилья, реформа рассрочек, увеличение пенсий и многое другое. Подписывайтесь и смотрите до конца — обещаю, это будет полезно.\n\nНОВЫЕ ЗАКОНЫ ДЕКАБРЯ! Новый паспорт, пенсии и потеря жилья — эти изменения коснутся каждого\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\nТАЙМКОДЫ:\n00:00 Новости\n00:52 Утильсбор\n03:01 Фильм о машиностроении \n06:07 Цифровой паспорт в банке\n07:30 Ограничения на коллекторов\n08:22 Изменения в осаго\n09:18 Изменение рассрочки\n11:50 Усложнения для жильцов\n13:53 Рост пенсий\n15:42 Моя 2 зарплата\n16:25 Биометрия для иностранцев\n17:05 Короткая рабочая неделя\n\n►Не забудьте подписаться на канал: https://clck.ru/TKeRK\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 год обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\nновости сегодня\nновости октября\nглавные новости\nцифровой паспорт\nутильсбор \nэкономика \nфинансы\n\n#инвестиции #новости  #дмитрийтолстяков #акции #облигации  #Пассивныйдоход ​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #валюта #комиссия #ПрогнозДоллара #КурсДоллара #дивиденды #набиуллина #центральныйбанк #последниеновости #законы #законырф #новостисегодня",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/DhHUgeBmrkA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/DhHUgeBmrkA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/DhHUgeBmrkA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/DhHUgeBmrkA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/DhHUgeBmrkA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Дмитрий Толстяков",
+        "tags": [
+          "деньги",
+          "экономика",
+          "инвестиции",
+          "повышение утильсбора",
+          "главные новости",
+          "новости сегодня",
+          "новости октября",
+          "новости",
+          "финансы",
+          "инвестиции для начинающих",
+          "экономика россии",
+          "цифровой рубль",
+          "инвестиции в акции",
+          "финансовая грамотность",
+          "финансовая независимость",
+          "экономические новости",
+          "повышение зарплаты",
+          "что делать с деньгами",
+          "вклады",
+          "цб рф",
+          "страхование вкладов",
+          "толстяков",
+          "толстяков портфель для дочерей",
+          "осаго",
+          "цифровой паспорт",
+          "цифровой паспорт рф",
+          "пенсии в россии"
+        ],
+        "categoryId": "27",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "ru",
+        "localized": {
+          "title": "НОВЫЕ ЗАКОНЫ ДЕКАБРЯ! Новый паспорт, пенсии и потеря жилья — эти изменения коснутся каждого",
+          "description": "✅ Бесплатное обучение про пассивный доход: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n\nВ декабре вступили в силу новые законы, которые затрагивают каждого из нас. Некоторые изменения на первый взгляд кажутся мелочью, но последствия могут быть серьёзными — в этом видео разберем популярные новости: цифровой паспорт, повышение утильсбора, потеря жилья, реформа рассрочек, увеличение пенсий и многое другое. Подписывайтесь и смотрите до конца — обещаю, это будет полезно.\n\nНОВЫЕ ЗАКОНЫ ДЕКАБРЯ! Новый паспорт, пенсии и потеря жилья — эти изменения коснутся каждого\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\nТАЙМКОДЫ:\n00:00 Новости\n00:52 Утильсбор\n03:01 Фильм о машиностроении \n06:07 Цифровой паспорт в банке\n07:30 Ограничения на коллекторов\n08:22 Изменения в осаго\n09:18 Изменение рассрочки\n11:50 Усложнения для жильцов\n13:53 Рост пенсий\n15:42 Моя 2 зарплата\n16:25 Биометрия для иностранцев\n17:05 Короткая рабочая неделя\n\n►Не забудьте подписаться на канал: https://clck.ru/TKeRK\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 год обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\nновости сегодня\nновости октября\nглавные новости\nцифровой паспорт\nутильсбор \nэкономика \nфинансы\n\n#инвестиции #новости  #дмитрийтолстяков #акции #облигации  #Пассивныйдоход ​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #валюта #комиссия #ПрогнозДоллара #КурсДоллара #дивиденды #набиуллина #центральныйбанк #последниеновости #законы #законырф #новостисегодня"
+        },
+        "defaultAudioLanguage": "ru"
+      },
+      "contentDetails": {
+        "duration": "PT18M19S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "true",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "3289",
+        "likeCount": "192",
+        "favoriteCount": "0",
+        "commentCount": "23"
+      }
+    }
+  ],
+  "pageInfo": {
+    "totalResults": 17,
+    "resultsPerPage": 17
+  }
+}
