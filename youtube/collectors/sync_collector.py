@@ -192,6 +192,7 @@ class YouTubeCollector:
                 scraped_at TEXT NOT NULL DEFAULT '',
                 view_count INTEGER NOT NULL DEFAULT -1,
                 like_count INTEGER NOT NULL DEFAULT -1,
+                favorite_count INTEGER NOT NULL DEFAULT -1,
                 comment_count INTEGER NOT NULL DEFAULT -1
             )""")
             
@@ -438,6 +439,7 @@ class YouTubeCollector:
                     "scraped_at": now,
                     "view_count": item["statistics"].get("viewCount", -1),
                     "like_count": item["statistics"].get("likeCount", -1),
+                    "favorite_count": item["statistics"].get("favoriteCount", -1),
                     "comment_count": item["statistics"].get("commentCount", -1)
                 }
 
