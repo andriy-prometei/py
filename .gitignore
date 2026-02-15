@@ -1,3 +1,14 @@
+# Ігноруємо все в папці youtube-data
+youtube/youtube-data/*
+# Але залишаємо файл .gitkeep
+!youtube/youtube-data/.gitkeep
+
+# Ігноруємо все в папці soft
+soft/*
+# Але залишаємо файл .gitkeep
+!soft/.gitkeep
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

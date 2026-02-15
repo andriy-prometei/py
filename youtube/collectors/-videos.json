@@ -1,1288 +1,738 @@
 {
   "kind": "youtube#videoListResponse",
-  "etag": "6tbyjt6cvf_j_6e3jUaKJCTwqc0",
+  "etag": "SrYk4GRIWD0kCSlNdq9TGqvWfmI",
   "items": [
     {
       "kind": "youtube#video",
-      "etag": "kkNi7iyfTPoVXA6Sl4mL3t3jiWg",
-      "id": "2XHPGeGpDVI",
+      "etag": "OTI4TRUFOM1vxKQerU11CNqW50g",
+      "id": "TYVqhCGU3jU",
       "snippet": {
-        "publishedAt": "2026-02-11T21:00:51Z",
-        "channelId": "UCc2J9DJeaBVaTzIuFlUMdQg",
-        "title": "БЫЧИЙ БРЕЙКЕР #смартмани",
-        "description": "",
+        "publishedAt": "2026-02-05T07:00:21Z",
+        "channelId": "UCxcrzzhQDj5zKJbXfIscCtg",
+        "title": "The Murder of Saudi Arabia’s King | ASSASSINS",
+        "description": "In 1975 a young Saudi prince entered the royal palace and shot dead the king, Faisal bin Abdulaziz Al Saud. \n\nThe killing was both personal and political, linked to the death of a brother, the tension between tradition and modernisation, and the introduction of television to the desert kingdom. Subscribe: https://ab.co/3yqPOZ5\n\nChapters\n00:00 The Prince shoots the King \n02:00 Hello my friend! \n02:37 TV comes to Saudi Arabia \n03:58 Resisting the new Saudi Arabia \n05:38 Who was King Faisal? \n07:16 The discovery of oil changes everything \n09:00 The Assassin \n11:45 King Faisal’s Assassination \n12:57 Aftermath\n\nHost: Aslan Pahari \nProducer: Hannah Jose \nAudio Engineer: Tegan Nicholls \nVideo Producers: Chloe Farrington, Tejas Bhat \nSpecial thanks: Michael Osmond for archives research \nSupervising Producer: Kyla Slaven \nExecutive Producers: Joel Werner, Eric George, Jessica Radburn \n\nTo binge even more great episodes of ASSASSINS with Aslan Pahari go the ABC listen app (Australia) or wherever you get your podcasts. There you'll find more stories of the world’s most shocking assassinations – from the lone wolf hitman to the professional assassin, you’ll hear how famous figures like Abraham Lincoln, Benazir Bhutto, Ramses III, Tupac and Gandhi met their end. \n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/2XHPGeGpDVI/default.jpg",
+            "url": "https://i.ytimg.com/vi/TYVqhCGU3jU/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/2XHPGeGpDVI/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/TYVqhCGU3jU/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/2XHPGeGpDVI/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/TYVqhCGU3jU/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/2XHPGeGpDVI/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/TYVqhCGU3jU/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/2XHPGeGpDVI/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/TYVqhCGU3jU/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "SanchoDT",
+        "channelTitle": "ABC News In-depth",
         "tags": [
-          "Брейкер",
-          "Брейкер Блок",
-          "Breaker Block",
-          "Breaker",
-          "Demand",
-          "Supply",
-          "Зона поддержки",
-          "Зона сопротивления",
-          "Смарт мани"
+          "abc news",
+          "australian news",
+          "abc news indepth",
+          "documentaries",
+          "long-form journalism",
+          "Assassins",
+          "assassin",
+          "assassinations",
+          "assassination",
+          "Aslan Pahari",
+          "Hello my friend",
+          "hit man",
+          "King Faisal",
+          "Faisal bin Abdulaziz Al Saud",
+          "Saudi Arabia",
+          "Riyadh",
+          "House of Saud",
+          "television",
+          "modernisation",
+          "Prince Khalid bin Musaid",
+          "Abdulaziz bin Saud",
+          "Prince Faisal bin Musaid"
         ],
-        "categoryId": "27",
+        "categoryId": "25",
         "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
+        "defaultLanguage": "en-GB",
         "localized": {
-          "title": "БЫЧИЙ БРЕЙКЕР #смартмани",
-          "description": ""
+          "title": "The Murder of Saudi Arabia’s King | ASSASSINS",
+          "description": "In 1975 a young Saudi prince entered the royal palace and shot dead the king, Faisal bin Abdulaziz Al Saud. \n\nThe killing was both personal and political, linked to the death of a brother, the tension between tradition and modernisation, and the introduction of television to the desert kingdom. Subscribe: https://ab.co/3yqPOZ5\n\nChapters\n00:00 The Prince shoots the King \n02:00 Hello my friend! \n02:37 TV comes to Saudi Arabia \n03:58 Resisting the new Saudi Arabia \n05:38 Who was King Faisal? \n07:16 The discovery of oil changes everything \n09:00 The Assassin \n11:45 King Faisal’s Assassination \n12:57 Aftermath\n\nHost: Aslan Pahari \nProducer: Hannah Jose \nAudio Engineer: Tegan Nicholls \nVideo Producers: Chloe Farrington, Tejas Bhat \nSpecial thanks: Michael Osmond for archives research \nSupervising Producer: Kyla Slaven \nExecutive Producers: Joel Werner, Eric George, Jessica Radburn \n\nTo binge even more great episodes of ASSASSINS with Aslan Pahari go the ABC listen app (Australia) or wherever you get your podcasts. There you'll find more stories of the world’s most shocking assassinations – from the lone wolf hitman to the professional assassin, you’ll hear how famous figures like Abraham Lincoln, Benazir Bhutto, Ramses III, Tupac and Gandhi met their end. \n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia"
         },
-        "defaultAudioLanguage": "ru"
+        "defaultAudioLanguage": "en-GB"
       },
       "contentDetails": {
-        "duration": "PT37S",
+        "duration": "PT14M56S",
         "dimension": "2d",
         "definition": "hd",
         "caption": "false",
-        "licensedContent": false,
+        "licensedContent": true,
         "contentRating": {},
         "projection": "rectangular"
       },
       "statistics": {
-        "viewCount": "4319",
-        "likeCount": "155",
+        "viewCount": "33902",
+        "likeCount": "629",
         "favoriteCount": "0",
-        "commentCount": "2"
+        "commentCount": "33"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "RKI8b-pAkWcD25qm_4sb9X4AZ7M",
-      "id": "_DOIBGcA5oo",
+      "etag": "0y2jNQhH1jZiUcRlaSWbm5qwGPo",
+      "id": "Om9mM3Gjw_U",
       "snippet": {
-        "publishedAt": "2026-02-02T17:32:03Z",
-        "channelId": "UCc2J9DJeaBVaTzIuFlUMdQg",
-        "title": "БРЕЙКЕР С НУЛЯ | СМАРТ МАНИ",
-        "description": "Мой телеграм канал: https://t.me/SANCHO_DT\n\nВ этом видео вы узнаете:\n\n- Что такое Брейкер и в чем логика его работы;\n- Как он формируется и определяется;\n- Как его торговать: четыре лучших входа и выбор между агрессивным и консервативным стоп-лоссом;\n- Как определять ключевые и промежуточные цели для постановки тейков;\n- А также чек-лист для А+ сетапа на основе Брейкера.",
+        "publishedAt": "2026-02-04T20:45:01Z",
+        "channelId": "UCxcrzzhQDj5zKJbXfIscCtg",
+        "title": "Falling in love with 'the dud version of Michael Klim | Australian Story",
+        "description": "Michael Klim was plagued by mysterious pain, and searching for answers, when he met his now-fiancée Michelle Owen. \n\nIn 2020, the Australian former Olympian was finally diagnosed with a rare autoimmune disease and while his need for care grew, so too did their love for each other. \n\n📺Watch the Australian Story episode here: https://youtu.be/f97HhxhChq0\n\n#AustralianStory #autoimmunedisease #MichaelKlim \n\nSubscribe: https://ab.co/3yqPOZ5 \n\nAbout Australian Story: The power of the personal. Compelling stories about real people that illuminate, entertain and inspire. \n\nWatch more Australian Story documentaries here: https://bit.ly/36ABH2J \nLike us on Facebook: www.facebook.com/abcaustralianstory __________________________________________________________ \nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you. \n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1 \nFor more from ABC News, click here: https://ab.co/2kxYCZY \nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC \nLike ABC News on Facebook: http://facebook.com/abcnews.au \nFollow ABC News on Instagram: http://instagram.com/abcnews_au \nFollow ABC News on Twitter: http://twitter.com/abcnews",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/_DOIBGcA5oo/default.jpg",
+            "url": "https://i.ytimg.com/vi/Om9mM3Gjw_U/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/_DOIBGcA5oo/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/Om9mM3Gjw_U/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/_DOIBGcA5oo/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/Om9mM3Gjw_U/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/_DOIBGcA5oo/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/Om9mM3Gjw_U/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/_DOIBGcA5oo/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/Om9mM3Gjw_U/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "SanchoDT",
+        "channelTitle": "ABC News In-depth",
         "tags": [
-          "брейкер",
-          "брейкер блок",
-          "смарт мани",
-          "санчо дт",
-          "sancho dt"
+          "abc news",
+          "australian news",
+          "abc news indepth",
+          "documentaries",
+          "long-form journalism",
+          "Michael Klim",
+          "swimming",
+          "swimmer",
+          "Michael Klim interview",
+          "Michael Klim swim stroke",
+          "Michael Klim freestyle",
+          "Sydney 2000 Olympics",
+          "Australian swimmers",
+          "Australian Story",
+          "CIPD",
+          "autoimmune disease",
+          "autoimmune disease symptoms",
+          "Michelle Owen",
+          "Bali",
+          "Australian swimming",
+          "Ian Thorpe",
+          "Daniel Kowalski",
+          "Gary Hall Jr",
+          "Lifeblood",
+          "blood donation"
         ],
-        "categoryId": "27",
+        "categoryId": "25",
         "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
+        "defaultLanguage": "en-GB",
         "localized": {
-          "title": "БРЕЙКЕР С НУЛЯ | СМАРТ МАНИ",
-          "description": "Мой телеграм канал: https://t.me/SANCHO_DT\n\nВ этом видео вы узнаете:\n\n- Что такое Брейкер и в чем логика его работы;\n- Как он формируется и определяется;\n- Как его торговать: четыре лучших входа и выбор между агрессивным и консервативным стоп-лоссом;\n- Как определять ключевые и промежуточные цели для постановки тейков;\n- А также чек-лист для А+ сетапа на основе Брейкера."
+          "title": "Falling in love with 'the dud version of Michael Klim | Australian Story",
+          "description": "Michael Klim was plagued by mysterious pain, and searching for answers, when he met his now-fiancée Michelle Owen. \n\nIn 2020, the Australian former Olympian was finally diagnosed with a rare autoimmune disease and while his need for care grew, so too did their love for each other. \n\n📺Watch the Australian Story episode here: https://youtu.be/f97HhxhChq0\n\n#AustralianStory #autoimmunedisease #MichaelKlim \n\nSubscribe: https://ab.co/3yqPOZ5 \n\nAbout Australian Story: The power of the personal. Compelling stories about real people that illuminate, entertain and inspire. \n\nWatch more Australian Story documentaries here: https://bit.ly/36ABH2J \nLike us on Facebook: www.facebook.com/abcaustralianstory __________________________________________________________ \nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you. \n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1 \nFor more from ABC News, click here: https://ab.co/2kxYCZY \nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC \nLike ABC News on Facebook: http://facebook.com/abcnews.au \nFollow ABC News on Instagram: http://instagram.com/abcnews_au \nFollow ABC News on Twitter: http://twitter.com/abcnews"
         },
-        "defaultAudioLanguage": "ru"
+        "defaultAudioLanguage": "en-GB"
       },
       "contentDetails": {
-        "duration": "PT12M41S",
+        "duration": "PT1M30S",
         "dimension": "2d",
         "definition": "hd",
         "caption": "false",
-        "licensedContent": false,
+        "licensedContent": true,
         "contentRating": {},
         "projection": "rectangular"
       },
       "statistics": {
-        "viewCount": "10667",
-        "likeCount": "1291",
-        "favoriteCount": "0",
-        "commentCount": "119"
+        "viewCount": "7281",
+        "likeCount": "98",
+        "favoriteCount": "0"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "wSKnHrKqlBJq9BI35W2pFVpw7WQ",
-      "id": "dj0nhuMwkvU",
+      "etag": "fEi-d2hRFWAVffLdw13lsYmy0gs",
+      "id": "BLBYjRI0A8I",
       "snippet": {
-        "publishedAt": "2025-12-23T18:00:55Z",
-        "channelId": "UCc2J9DJeaBVaTzIuFlUMdQg",
-        "title": "Применение Криптовалют",
-        "description": "",
+        "publishedAt": "2026-02-04T19:30:03Z",
+        "channelId": "UCxcrzzhQDj5zKJbXfIscCtg",
+        "title": "Oil and gas project that promised Timor-Leste riches hasn't delivered | 7.30",
+        "description": "When he visited Timor-Leste last week, Prime Minister Anthony Albanese said he brought good news on the long-stalled Greater Sunrise oil and gas project.\n\nBut the stalemate over the operation continues.\n\nReporter Nick Sas travelled to the small village of Suai, where the promised riches of oil and gas have not materialised.\n\nSubscribe: https://ab.co/3yqPOZ5 \n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/dj0nhuMwkvU/default.jpg",
+            "url": "https://i.ytimg.com/vi/BLBYjRI0A8I/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/dj0nhuMwkvU/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/BLBYjRI0A8I/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/dj0nhuMwkvU/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/BLBYjRI0A8I/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/dj0nhuMwkvU/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/BLBYjRI0A8I/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/dj0nhuMwkvU/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/BLBYjRI0A8I/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "SanchoDT",
-        "categoryId": "27",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
-        "localized": {
-          "title": "Применение Криптовалют",
-          "description": ""
-        },
-        "defaultAudioLanguage": "ru"
-      },
-      "contentDetails": {
-        "duration": "PT2M3S",
-        "dimension": "2d",
-        "definition": "hd",
-        "caption": "false",
-        "licensedContent": false,
-        "contentRating": {},
-        "projection": "rectangular"
-      },
-      "statistics": {
-        "viewCount": "1762",
-        "likeCount": "55",
-        "favoriteCount": "0",
-        "commentCount": "1"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "qV3eEHSgB1SoYvJeWwQ4jxfGfwY",
-      "id": "dl6OyAGG7qo",
-      "snippet": {
-        "publishedAt": "2025-12-22T05:00:53Z",
-        "channelId": "UCc2J9DJeaBVaTzIuFlUMdQg",
-        "title": "Перспективы Криптовалют",
-        "description": "",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/dl6OyAGG7qo/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/dl6OyAGG7qo/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/dl6OyAGG7qo/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/dl6OyAGG7qo/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/dl6OyAGG7qo/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "SanchoDT",
-        "categoryId": "27",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
-        "localized": {
-          "title": "Перспективы Криптовалют",
-          "description": ""
-        },
-        "defaultAudioLanguage": "ru"
-      },
-      "contentDetails": {
-        "duration": "PT2M14S",
-        "dimension": "2d",
-        "definition": "hd",
-        "caption": "false",
-        "licensedContent": false,
-        "contentRating": {},
-        "projection": "rectangular"
-      },
-      "statistics": {
-        "viewCount": "2619",
-        "likeCount": "63",
-        "favoriteCount": "0",
-        "commentCount": "3"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "f5y1Ik-w1MjFGHtKkTCEhKtvmr8",
-      "id": "HfKfz-sNuPQ",
-      "snippet": {
-        "publishedAt": "2025-12-20T20:00:13Z",
-        "channelId": "UCc2J9DJeaBVaTzIuFlUMdQg",
-        "title": "Что такое Халвинг",
-        "description": "",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/HfKfz-sNuPQ/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/HfKfz-sNuPQ/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/HfKfz-sNuPQ/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/HfKfz-sNuPQ/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/HfKfz-sNuPQ/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "SanchoDT",
-        "categoryId": "27",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
-        "localized": {
-          "title": "Что такое Халвинг",
-          "description": ""
-        },
-        "defaultAudioLanguage": "ru"
-      },
-      "contentDetails": {
-        "duration": "PT1M16S",
-        "dimension": "2d",
-        "definition": "hd",
-        "caption": "false",
-        "licensedContent": false,
-        "contentRating": {},
-        "projection": "rectangular"
-      },
-      "statistics": {
-        "viewCount": "2291",
-        "likeCount": "50",
-        "favoriteCount": "0",
-        "commentCount": "5"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "LaSn13RLV6qAnBpdNyFGqxN8JHk",
-      "id": "0yxoKFrq1x8",
-      "snippet": {
-        "publishedAt": "2026-01-30T10:49:16Z",
-        "channelId": "UCisHpO0gHidVp6THoHvGPTA",
-        "title": "30 января 2026 г.",
-        "description": "",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/0yxoKFrq1x8/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/0yxoKFrq1x8/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/0yxoKFrq1x8/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/0yxoKFrq1x8/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/0yxoKFrq1x8/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "RAYTOP | Влад Афанасьев",
-        "categoryId": "17",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
-        "localized": {
-          "title": "30 января 2026 г.",
-          "description": ""
-        },
-        "defaultAudioLanguage": "ru"
-      },
-      "contentDetails": {
-        "duration": "PT59S",
-        "dimension": "2d",
-        "definition": "hd",
-        "caption": "false",
-        "licensedContent": false,
-        "contentRating": {},
-        "projection": "rectangular"
-      },
-      "statistics": {
-        "viewCount": "1152",
-        "likeCount": "18",
-        "favoriteCount": "0",
-        "commentCount": "1"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "tM26JsSfmEYrPFUSPqCUGgQNSOY",
-      "id": "X1JGqcmqQvA",
-      "snippet": {
-        "publishedAt": "2026-01-19T12:17:47Z",
-        "channelId": "UCisHpO0gHidVp6THoHvGPTA",
-        "title": "Результат не ощущается сразу",
-        "description": "",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/X1JGqcmqQvA/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/X1JGqcmqQvA/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/X1JGqcmqQvA/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/X1JGqcmqQvA/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/X1JGqcmqQvA/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "RAYTOP | Влад Афанасьев",
+        "channelTitle": "ABC News In-depth",
         "tags": [
-          "бег",
-          "легкая атлетика",
-          "как правильно бегать",
-          "бег для начинающих",
-          "как не травмироваться при беге",
-          "для чего нужен бег",
-          "чем полезен бег"
+          "abc news",
+          "australian news",
+          "abc news indepth",
+          "documentaries",
+          "long-form journalism",
+          "timor-leste",
+          "airport",
+          "anthony albanese",
+          "greater sunrise",
+          "oil and gas",
+          "mining",
+          "suai",
+          "ghost airport",
+          "abc",
+          "news",
+          "australia"
         ],
-        "categoryId": "17",
+        "categoryId": "25",
         "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
+        "defaultLanguage": "en-GB",
         "localized": {
-          "title": "Результат не ощущается сразу",
-          "description": ""
+          "title": "Oil and gas project that promised Timor-Leste riches hasn't delivered | 7.30",
+          "description": "When he visited Timor-Leste last week, Prime Minister Anthony Albanese said he brought good news on the long-stalled Greater Sunrise oil and gas project.\n\nBut the stalemate over the operation continues.\n\nReporter Nick Sas travelled to the small village of Suai, where the promised riches of oil and gas have not materialised.\n\nSubscribe: https://ab.co/3yqPOZ5 \n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia"
         },
-        "defaultAudioLanguage": "en"
+        "defaultAudioLanguage": "en-GB"
       },
       "contentDetails": {
-        "duration": "PT6S",
+        "duration": "PT6M36S",
         "dimension": "2d",
         "definition": "hd",
         "caption": "false",
-        "licensedContent": false,
+        "licensedContent": true,
         "contentRating": {},
         "projection": "rectangular"
       },
       "statistics": {
-        "viewCount": "812",
-        "likeCount": "4",
-        "favoriteCount": "0",
-        "commentCount": "0"
+        "viewCount": "110931",
+        "likeCount": "819",
+        "favoriteCount": "0"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "2BPENxiRCo67xLiFmClGi2sdl1k",
-      "id": "CxwwOAHz36g",
+      "etag": "Ut57G3njxYWZ8dRzYw3xKYmtK9U",
+      "id": "DAqCY7O-gHg",
       "snippet": {
-        "publishedAt": "2026-01-19T12:17:37Z",
-        "channelId": "UCisHpO0gHidVp6THoHvGPTA",
-        "title": "Зоны не работают сами по себе",
-        "description": "",
+        "publishedAt": "2026-02-04T11:45:02Z",
+        "channelId": "UCxcrzzhQDj5zKJbXfIscCtg",
+        "title": "Countries on high alert after deadly Nipah virus detected in India | 7.30",
+        "description": "Health authorities across Asia are on high alert after two confirmed cases of the deadly Nipah virus.\n\n7.30’s Courtney Bembridge explains the threat.\n\nSubscribe: https://ab.co/3yqPOZ5  \n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/CxwwOAHz36g/default.jpg",
+            "url": "https://i.ytimg.com/vi/DAqCY7O-gHg/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/CxwwOAHz36g/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/DAqCY7O-gHg/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/CxwwOAHz36g/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/DAqCY7O-gHg/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/CxwwOAHz36g/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/DAqCY7O-gHg/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/CxwwOAHz36g/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/DAqCY7O-gHg/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "RAYTOP | Влад Афанасьев",
+        "channelTitle": "ABC News In-depth",
         "tags": [
-          "бег",
-          "легкая атлетика",
-          "как правильно бегать",
-          "бег для начинающих",
-          "как не травмироваться при беге",
-          "для чего нужен бег",
-          "чем полезен бег"
+          "abc news",
+          "australian news",
+          "abc news indepth",
+          "documentaries",
+          "long-form journalism",
+          "nipah virus",
+          "nipah",
+          "india",
+          "news",
+          "asia",
+          "world news",
+          "bat",
+          "virus",
+          "what is nipah virus"
         ],
-        "categoryId": "17",
+        "categoryId": "25",
         "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
+        "defaultLanguage": "en-GB",
         "localized": {
-          "title": "Зоны не работают сами по себе",
-          "description": ""
+          "title": "Countries on high alert after deadly Nipah virus detected in India | 7.30",
+          "description": "Health authorities across Asia are on high alert after two confirmed cases of the deadly Nipah virus.\n\n7.30’s Courtney Bembridge explains the threat.\n\nSubscribe: https://ab.co/3yqPOZ5  \n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia"
         },
-        "defaultAudioLanguage": "ru"
+        "defaultAudioLanguage": "en-GB"
       },
       "contentDetails": {
-        "duration": "PT6S",
+        "duration": "PT3M37S",
         "dimension": "2d",
         "definition": "hd",
         "caption": "false",
-        "licensedContent": false,
+        "licensedContent": true,
         "contentRating": {},
         "projection": "rectangular"
       },
       "statistics": {
-        "viewCount": "926",
-        "likeCount": "6",
-        "favoriteCount": "0",
-        "commentCount": "0"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "cW0ZBphXDhiWmSqRV5yaIMHs6ow",
-      "id": "nG0bcA8LEC8",
-      "snippet": {
-        "publishedAt": "2026-01-19T12:17:26Z",
-        "channelId": "UCisHpO0gHidVp6THoHvGPTA",
-        "title": "Энергетические системы перегружены",
-        "description": "",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/nG0bcA8LEC8/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/nG0bcA8LEC8/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/nG0bcA8LEC8/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/nG0bcA8LEC8/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/nG0bcA8LEC8/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "RAYTOP | Влад Афанасьев",
-        "tags": [
-          "бег",
-          "легкая атлетика",
-          "как правильно бегать",
-          "бег для начинающих",
-          "как не травмироваться при беге",
-          "для чего нужен бег",
-          "чем полезен бег"
-        ],
-        "categoryId": "17",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
-        "localized": {
-          "title": "Энергетические системы перегружены",
-          "description": ""
-        },
-        "defaultAudioLanguage": "en"
-      },
-      "contentDetails": {
-        "duration": "PT6S",
-        "dimension": "2d",
-        "definition": "hd",
-        "caption": "false",
-        "licensedContent": false,
-        "contentRating": {},
-        "projection": "rectangular"
-      },
-      "statistics": {
-        "viewCount": "98",
-        "likeCount": "1",
-        "favoriteCount": "0",
-        "commentCount": "0"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "CyzMPZRjAjnggV33grhetd5JmKg",
-      "id": "DaNGD3o5EQY",
-      "snippet": {
-        "publishedAt": "2026-01-19T12:17:14Z",
-        "channelId": "UCisHpO0gHidVp6THoHvGPTA",
-        "title": "Причина не в слабом сердце",
-        "description": "",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/DaNGD3o5EQY/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/DaNGD3o5EQY/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/DaNGD3o5EQY/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/DaNGD3o5EQY/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/DaNGD3o5EQY/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "RAYTOP | Влад Афанасьев",
-        "tags": [
-          "бег",
-          "легкая атлетика",
-          "как правильно бегать",
-          "бег для начинающих",
-          "как не травмироваться при беге",
-          "для чего нужен бег",
-          "чем полезен бег"
-        ],
-        "categoryId": "17",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
-        "localized": {
-          "title": "Причина не в слабом сердце",
-          "description": ""
-        },
-        "defaultAudioLanguage": "ru"
-      },
-      "contentDetails": {
-        "duration": "PT7S",
-        "dimension": "2d",
-        "definition": "hd",
-        "caption": "false",
-        "licensedContent": false,
-        "contentRating": {},
-        "projection": "rectangular"
-      },
-      "statistics": {
-        "viewCount": "688",
-        "likeCount": "5",
-        "favoriteCount": "0",
-        "commentCount": "0"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "miptWr1F7cZgBW3cNiOqq_4G7Lw",
-      "id": "g5m0gc0g4jY",
-      "snippet": {
-        "publishedAt": "2025-12-19T02:18:06Z",
-        "channelId": "UC9ZoTj3kwkRL6lyML09lRsA",
-        "title": "ЭТОТ Метод Технического и Свечного Анализа Всегда Работает и Приносит ПРИБЫЛЬ!",
-        "description": "❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nВ этом видео мы рассмотрим простой метод технического и свечного анализа, который всегда приносит прибыль. Это единственный алгоритм технического анализа графика, который когда- либо понадобится новичку.\nВы узнаете, как использовать чистый график для анализа без индикаторов и объемов. Это эффективная методика технического и свечного анализа, которая поможет вам видеть конкретные зоны для торговли, чтобы извлекать прибыль даже если вы новичок в трейдинге.\nМЕТОД Технического и Свечного Анализа Который Всегда Работает и Приносит ПРИБЫЛЬ!",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/g5m0gc0g4jY/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/g5m0gc0g4jY/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/g5m0gc0g4jY/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/g5m0gc0g4jY/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/g5m0gc0g4jY/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Ваш тренер по трейдингу",
-        "tags": [
-          "Ваш тренер по трейдингу",
-          "тренер по трейдингу",
-          "технический анализ",
-          "свечной анализ",
-          "прайс экшен",
-          "price action",
-          "анализ графика трейдинг",
-          "трейдинг для чайников",
-          "японские свечи трейдинг",
-          "технический анализ в трейдинге",
-          "теханализ",
-          "технический анализ трейдинг",
-          "свечной анализ для новичков",
-          "прайс экшен трейдинг",
-          "свечной анализ обучение",
-          "теханализ криптовалют",
-          "теханализ обучение",
-          "теханализ с нуля",
-          "теханализ в трейдинге с нуля",
-          "теханализ для начинающих",
-          "технический анализ для начинающих"
-        ],
-        "categoryId": "22",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
-        "localized": {
-          "title": "ЭТОТ Метод Технического и Свечного Анализа Всегда Работает и Приносит ПРИБЫЛЬ!",
-          "description": "❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nВ этом видео мы рассмотрим простой метод технического и свечного анализа, который всегда приносит прибыль. Это единственный алгоритм технического анализа графика, который когда- либо понадобится новичку.\nВы узнаете, как использовать чистый график для анализа без индикаторов и объемов. Это эффективная методика технического и свечного анализа, которая поможет вам видеть конкретные зоны для торговли, чтобы извлекать прибыль даже если вы новичок в трейдинге.\nМЕТОД Технического и Свечного Анализа Который Всегда Работает и Приносит ПРИБЫЛЬ!"
-        },
-        "defaultAudioLanguage": "ru"
-      },
-      "contentDetails": {
-        "duration": "PT16M2S",
-        "dimension": "2d",
-        "definition": "hd",
-        "caption": "false",
-        "licensedContent": false,
-        "contentRating": {},
-        "projection": "rectangular"
-      },
-      "statistics": {
-        "viewCount": "3570",
-        "likeCount": "186",
+        "viewCount": "83270",
+        "likeCount": "820",
         "favoriteCount": "0",
         "commentCount": "11"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "5a7WmLBh-EqYLxSOQ7mmoKQybSU",
-      "id": "xVQAIWPjoEI",
+      "etag": "mTz23cwC8R2osyCR9Il-C42Mjk4",
+      "id": "t9lrmXnigb8",
       "snippet": {
-        "publishedAt": "2025-12-09T22:33:51Z",
-        "channelId": "UC9ZoTj3kwkRL6lyML09lRsA",
-        "title": "Главная Ошибка Трейдеров, торгующих Свечные Паттерны",
-        "description": "Ошибка трейдеров, торгующих Свечные Паттерны. Вот почему один паттерн приносит прибыль,  а другой нет.\n\n❤️ Здесь учатся быстрее: https://youtu.be/8PX0Y8YTjYo |  Пиши в личку формат https://t.me/trenertrade\n⭐️ Брокер, который выводит деньги https://cutt.ly/JwKCz5PZ\n🔥 Бесплатный телеграм https://t.me/tradingcooach\n\nОНИ ВРАЛИ) Как пришел к таком методу анализа: https://youtu.be/5XLNpp-UpoU\nКак торговать сломы структуры https://youtu.be/ZWs0mV0rKtg\nПростейшая торговая стратегия: https://youtu.be/qEbNzISMB0g\nРАЗГОН ДЕПОЗИТА реальный : https://youtu.be/qgtiBiCemS4",
+        "publishedAt": "2026-02-04T10:45:06Z",
+        "channelId": "UCxcrzzhQDj5zKJbXfIscCtg",
+        "title": "Can the Coalition reunite under the current leadership?  | 7.30",
+        "description": "The prospects of a swift resolution of the Coalition's woes are fading. An impasse between the two leaders is yet to break after a further meeting today. \n\n7.30’s political Editor Jacob Greber reports.\n\nSubscribe: https://ab.co/3yqPOZ5   \n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/xVQAIWPjoEI/default.jpg",
+            "url": "https://i.ytimg.com/vi/t9lrmXnigb8/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/xVQAIWPjoEI/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/t9lrmXnigb8/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/xVQAIWPjoEI/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/t9lrmXnigb8/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/xVQAIWPjoEI/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/t9lrmXnigb8/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/xVQAIWPjoEI/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/t9lrmXnigb8/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "Ваш тренер по трейдингу",
+        "channelTitle": "ABC News In-depth",
         "tags": [
-          "Ваш тренер по трейдингу",
-          "тренер по трейдингу",
-          "свечи трейдинг",
-          "трейдинг одно видео вместо тысячи книг",
-          "структура рынка форекс",
-          "свечные паттерны",
-          "торговые сетапы трейдинг",
-          "прайс экшен",
-          "прайс экшен стратегия",
-          "прайс экшен обучение",
-          "прайс экшен как читать график без",
-          "трейдинг без индикаторов",
-          "price action trading"
+          "abc news",
+          "australian news",
+          "abc news indepth",
+          "documentaries",
+          "long-form journalism",
+          "sussan ley",
+          "david littleproud",
+          "nationals",
+          "national party",
+          "liberals",
+          "liberal party",
+          "coalition",
+          "australia",
+          "politics",
+          "canberra",
+          "abc"
         ],
-        "categoryId": "22",
+        "categoryId": "25",
         "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
+        "defaultLanguage": "en-GB",
         "localized": {
-          "title": "Главная Ошибка Трейдеров, торгующих Свечные Паттерны",
-          "description": "Ошибка трейдеров, торгующих Свечные Паттерны. Вот почему один паттерн приносит прибыль,  а другой нет.\n\n❤️ Здесь учатся быстрее: https://youtu.be/8PX0Y8YTjYo |  Пиши в личку формат https://t.me/trenertrade\n⭐️ Брокер, который выводит деньги https://cutt.ly/JwKCz5PZ\n🔥 Бесплатный телеграм https://t.me/tradingcooach\n\nОНИ ВРАЛИ) Как пришел к таком методу анализа: https://youtu.be/5XLNpp-UpoU\nКак торговать сломы структуры https://youtu.be/ZWs0mV0rKtg\nПростейшая торговая стратегия: https://youtu.be/qEbNzISMB0g\nРАЗГОН ДЕПОЗИТА реальный : https://youtu.be/qgtiBiCemS4"
+          "title": "Can the Coalition reunite under the current leadership?  | 7.30",
+          "description": "The prospects of a swift resolution of the Coalition's woes are fading. An impasse between the two leaders is yet to break after a further meeting today. \n\n7.30’s political Editor Jacob Greber reports.\n\nSubscribe: https://ab.co/3yqPOZ5   \n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia"
         },
-        "defaultAudioLanguage": "ru"
+        "defaultAudioLanguage": "en-GB"
       },
       "contentDetails": {
-        "duration": "PT1M1S",
+        "duration": "PT4M",
         "dimension": "2d",
         "definition": "hd",
         "caption": "false",
-        "licensedContent": false,
-        "contentRating": {},
-        "projection": "rectangular"
-      },
-      "statistics": {
-        "viewCount": "8498",
-        "likeCount": "172",
-        "favoriteCount": "0",
-        "commentCount": "2"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "znL5wyur9fadSlsna1cFdPSvagE",
-      "id": "C7K_dBRUxnc",
-      "snippet": {
-        "publishedAt": "2025-12-08T04:44:48Z",
-        "channelId": "UC9ZoTj3kwkRL6lyML09lRsA",
-        "title": "Удивительно, Насколько прост ЭТОТ Метод Технического и Свечного Анализа для Новичка",
-        "description": "В этом видео мы разбираем эффективную \"trading strategy\" для новичков, фокусируясь на чистом графике. Вы узнаете, как использовать \"price action\" и определять зоны \"support and resistance\" для успешного \"forex trading\". Мы покажем это на примере графика \"gbp usd\", чтобы вы смогли извлекать прибыль без лишних индикаторов.\n\n❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nЭто видео- лучшее руководство по простому Техническому Анализу для новичка. Руководство для начинающих как делать технический и свечной анализ графика новичку по порядку. Использовать будем чистый график без индикаторов. ТОлько структура и далее Price Action",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/C7K_dBRUxnc/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/C7K_dBRUxnc/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/C7K_dBRUxnc/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/C7K_dBRUxnc/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/C7K_dBRUxnc/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Ваш тренер по трейдингу",
-        "tags": [
-          "Ваш тренер по трейдингу",
-          "тренер по трейдингу",
-          "технический анализ",
-          "свечной анализ",
-          "прайс экшен",
-          "price action",
-          "анализ графика трейдинг",
-          "трейдинг для чайников",
-          "японские свечи трейдинг",
-          "технический анализ в трейдинге",
-          "теханализ",
-          "технический анализ трейдинг",
-          "свечной анализ для новичков",
-          "прайс экшен трейдинг",
-          "свечной анализ обучение",
-          "теханализ криптовалют",
-          "теханализ обучение",
-          "теханализ с нуля",
-          "теханализ в трейдинге с нуля",
-          "теханализ для начинающих",
-          "технический анализ для начинающих"
-        ],
-        "categoryId": "22",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
-        "localized": {
-          "title": "Удивительно, Насколько прост ЭТОТ Метод Технического и Свечного Анализа для Новичка",
-          "description": "В этом видео мы разбираем эффективную \"trading strategy\" для новичков, фокусируясь на чистом графике. Вы узнаете, как использовать \"price action\" и определять зоны \"support and resistance\" для успешного \"forex trading\". Мы покажем это на примере графика \"gbp usd\", чтобы вы смогли извлекать прибыль без лишних индикаторов.\n\n❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nЭто видео- лучшее руководство по простому Техническому Анализу для новичка. Руководство для начинающих как делать технический и свечной анализ графика новичку по порядку. Использовать будем чистый график без индикаторов. ТОлько структура и далее Price Action"
-        },
-        "defaultAudioLanguage": "zxx"
-      },
-      "contentDetails": {
-        "duration": "PT22M22S",
-        "dimension": "2d",
-        "definition": "hd",
-        "caption": "false",
-        "licensedContent": false,
-        "contentRating": {},
-        "projection": "rectangular"
-      },
-      "statistics": {
-        "viewCount": "3924",
-        "likeCount": "210",
-        "favoriteCount": "0",
-        "commentCount": "13"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "paMeEuvV8dS5PNjvGh3CY8dc0Fs",
-      "id": "gk3HiaK46Zg",
-      "snippet": {
-        "publishedAt": "2025-12-02T02:01:37Z",
-        "channelId": "UC9ZoTj3kwkRL6lyML09lRsA",
-        "title": "Единственный алгоритм теханализа графика, который когда-либо понадобится Новичку. Трейдинг с нуля",
-        "description": "❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nВ этом видео мы рассмотрим единственный алгоритм технического анализа графика, который когда- либо понадобится новичку\nВы узнаете, как использовать чистый график для анализа без индикаторов и объемов. Это эффективная методика технического и свечного анализа, которая поможет вам видеть конкретные зоны для торговли, чтобы извлекать прибыль даже если вы новичок в трейдинге.",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/gk3HiaK46Zg/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/gk3HiaK46Zg/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/gk3HiaK46Zg/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/gk3HiaK46Zg/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/gk3HiaK46Zg/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Ваш тренер по трейдингу",
-        "tags": [
-          "Ваш тренер по трейдингу",
-          "тренер по трейдингу",
-          "технический анализ",
-          "свечной анализ",
-          "прайс экшен",
-          "price action",
-          "анализ графика трейдинг",
-          "трейдинг для чайников",
-          "японские свечи трейдинг",
-          "технический анализ в трейдинге",
-          "теханализ",
-          "технический анализ трейдинг",
-          "свечной анализ для новичков",
-          "прайс экшен трейдинг",
-          "свечной анализ обучение",
-          "теханализ криптовалют",
-          "теханализ обучение",
-          "теханализ с нуля",
-          "теханализ в трейдинге с нуля",
-          "теханализ для начинающих",
-          "технический анализ для начинающих"
-        ],
-        "categoryId": "22",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
-        "localized": {
-          "title": "Единственный алгоритм теханализа графика, который когда-либо понадобится Новичку. Трейдинг с нуля",
-          "description": "❤️ Видеоуроки с моей поддержкой: https://t.me/trenertrade (Пиши \"Обучение\")\n⭐️ Брокер, который выводит деньги. Бонус до 20% и повышенный кэшбэк по промокоду LDW20D https://cutt.ly/Ttqoq7TA\n🚀 Бесплатный телеграм https://t.me/tradingcooach\n\nВ этом видео мы рассмотрим единственный алгоритм технического анализа графика, который когда- либо понадобится новичку\nВы узнаете, как использовать чистый график для анализа без индикаторов и объемов. Это эффективная методика технического и свечного анализа, которая поможет вам видеть конкретные зоны для торговли, чтобы извлекать прибыль даже если вы новичок в трейдинге."
-        },
-        "defaultAudioLanguage": "ru"
-      },
-      "contentDetails": {
-        "duration": "PT22M48S",
-        "dimension": "2d",
-        "definition": "hd",
-        "caption": "false",
-        "licensedContent": false,
-        "contentRating": {},
-        "projection": "rectangular"
-      },
-      "statistics": {
-        "viewCount": "6054",
-        "likeCount": "295",
-        "favoriteCount": "0",
-        "commentCount": "32"
-      }
-    },
-    {
-      "kind": "youtube#video",
-      "etag": "tc6CqNU0uSSTlin7ssk8rNgvjIU",
-      "id": "qVTN_dw5cxw",
-      "snippet": {
-        "publishedAt": "2026-01-13T12:58:53Z",
-        "channelId": "UC5J6Do11WM_iKQ3uOPXd4Pg",
-        "title": "КУДА ИНВЕСТИРОВАТЬ В 2026 ГОДУ? Стоит ли входить в фондовый рынок? Инвестиции без паники",
-        "description": "✅ Бесплатное обучение про пассивный доход: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n\nКуда инвестировать в 2026 году? В этом видео делюсь своей стратегией инвестиций в условиях снижения ставки, высокой инфляции и нестабильной геополитики. Рассказываю, какие облигации еще дают высокий купон, как диверсифицироваться в валюте и стоит ли входить в фондовый рынок. Готовим портфель к 2026 году без паники. Подписывайтесь и смотрите до конца — обещаю, это будет полезно.\n\nКУДА ИНВЕСТИРОВАТЬ В 2026 ГОДУ? Стоит ли входить в фондовый рынок? Инвестиции без паники\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\nТАЙМКОДЫ:\n00:00 Портфель 2026\n2:10 Первый уровень: защита\n4:54 Второй уровень: валютная защита\n7:23 Третий уровень: ростовая часть\n9:12 Недвижимость\n11:05 Криптовалюта\n12:36 Сценарии ключевой ставки\n14:27 Итоги\n\n►Не забудьте подписаться на канал: https://clck.ru/TKeRK\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 год обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\n#инвестиции #новости  #дмитрийтолстяков #акции #облигации  #Пассивныйдоход ​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #валюта #ПрогнозДоллара #КурсДоллара #дивиденды #набиуллина #центральныйбанк #последниеновости #законы #законырф #новостисегодня",
-        "thumbnails": {
-          "default": {
-            "url": "https://i.ytimg.com/vi/qVTN_dw5cxw/default.jpg",
-            "width": 120,
-            "height": 90
-          },
-          "medium": {
-            "url": "https://i.ytimg.com/vi/qVTN_dw5cxw/mqdefault.jpg",
-            "width": 320,
-            "height": 180
-          },
-          "high": {
-            "url": "https://i.ytimg.com/vi/qVTN_dw5cxw/hqdefault.jpg",
-            "width": 480,
-            "height": 360
-          },
-          "standard": {
-            "url": "https://i.ytimg.com/vi/qVTN_dw5cxw/sddefault.jpg",
-            "width": 640,
-            "height": 480
-          },
-          "maxres": {
-            "url": "https://i.ytimg.com/vi/qVTN_dw5cxw/maxresdefault.jpg",
-            "width": 1280,
-            "height": 720
-          }
-        },
-        "channelTitle": "Дмитрий Толстяков",
-        "tags": [
-          "инвестиции 2026",
-          "куда инвестировать в 2026",
-          "фондовый рынок",
-          "рубль",
-          "пассивный доход",
-          "пассивный заработок",
-          "облигации",
-          "курс доллара",
-          "курс доллара прогноз",
-          "курс доллара на сегодня",
-          "ключевая ставка 2025",
-          "ставка цб",
-          "ключевая ставка",
-          "набиуллина",
-          "вклады",
-          "крипта",
-          "инвестиции в облигации",
-          "акции",
-          "куда вложить деньги",
-          "финансы",
-          "инвестиции",
-          "деньги",
-          "инвестиции с нуля",
-          "куда инвестировать деньги",
-          "недвижимость",
-          "рынок недвижимости",
-          "заработок",
-          "куда инвестировать",
-          "российские акции",
-          "лучшие облигации"
-        ],
-        "categoryId": "27",
-        "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
-        "localized": {
-          "title": "КУДА ИНВЕСТИРОВАТЬ В 2026 ГОДУ? Стоит ли входить в фондовый рынок? Инвестиции без паники",
-          "description": "✅ Бесплатное обучение про пассивный доход: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n\nКуда инвестировать в 2026 году? В этом видео делюсь своей стратегией инвестиций в условиях снижения ставки, высокой инфляции и нестабильной геополитики. Рассказываю, какие облигации еще дают высокий купон, как диверсифицироваться в валюте и стоит ли входить в фондовый рынок. Готовим портфель к 2026 году без паники. Подписывайтесь и смотрите до конца — обещаю, это будет полезно.\n\nКУДА ИНВЕСТИРОВАТЬ В 2026 ГОДУ? Стоит ли входить в фондовый рынок? Инвестиции без паники\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\nТАЙМКОДЫ:\n00:00 Портфель 2026\n2:10 Первый уровень: защита\n4:54 Второй уровень: валютная защита\n7:23 Третий уровень: ростовая часть\n9:12 Недвижимость\n11:05 Криптовалюта\n12:36 Сценарии ключевой ставки\n14:27 Итоги\n\n►Не забудьте подписаться на канал: https://clck.ru/TKeRK\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 год обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\n#инвестиции #новости  #дмитрийтолстяков #акции #облигации  #Пассивныйдоход ​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #валюта #ПрогнозДоллара #КурсДоллара #дивиденды #набиуллина #центральныйбанк #последниеновости #законы #законырф #новостисегодня"
-        },
-        "defaultAudioLanguage": "ru"
-      },
-      "contentDetails": {
-        "duration": "PT15M30S",
-        "dimension": "2d",
-        "definition": "hd",
-        "caption": "true",
         "licensedContent": true,
         "contentRating": {},
         "projection": "rectangular"
       },
       "statistics": {
-        "viewCount": "8481",
-        "likeCount": "380",
-        "favoriteCount": "0",
-        "commentCount": "37"
+        "viewCount": "11348",
+        "likeCount": "112",
+        "favoriteCount": "0"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "sXcVUhNQfSb5nAb5imOrKhRP_vI",
-      "id": "YkgTV5RF8Pw",
+      "etag": "_N-tCzT5paV5KEBXltfZiYqI6ZI",
+      "id": "vATDN8sXqn8",
       "snippet": {
-        "publishedAt": "2025-12-30T10:00:08Z",
-        "channelId": "UC5J6Do11WM_iKQ3uOPXd4Pg",
-        "title": "ПОРТФЕЛЬ ДЛЯ ДОЧЕРЕЙ, ИТОГИ 2025 / Обновление и покупки",
-        "description": "✅ Если хотите начать формировать пассивный доход, ссылка на бесплатное обучение: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n✅ Мой новый канал про историю и финансы: https://www.youtube.com/@TolDocks\n\nНовый выпуск портфеля для моих дочерей. Анализ текущего состояния: доходности, блокировки активов, рост облигаций и падение акций. Покупки: облигации, золото, ВТБ, Сбер, Т, Novatek, Алроса и др. Стратегия диверсификации, причины решений, прогнозы по рынку и геополитике. Узнайте, как я инвестирую в долгосрок и к чему это ведёт! \n\n*Цены в приложении брокера на момент просмотра видео могут отличаться.\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\n00:58 Обзор портфеля\n07:50 Аналитика портфеля\n12:53 Покупка активов\n22:45 Итоги\n\nПОРТФЕЛЬ ДЛЯ ДОЧЕРЕЙ, ИТОГИ 2025 / Обновление и покупки\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 года обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\nинвестиции\nдивидендные акции\nкакие акции купить\nпассивный доход\nоблигации\nперспективные облигации\nпортфель для дочек\nпортфель для дочерей\n\n#инвестиции #портфельдлядочерей #дмитрийтолстяков #акции #облигации  #Пассивныйдоход #тинькоффинвестиции​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #тинькофф #валюта #комиссия #ПрогнозДоллара #КурсДоллара #газпром #дивиденды #набиуллина #центральныйбанк #последниеновости",
+        "publishedAt": "2026-02-04T09:43:29Z",
+        "channelId": "UCxcrzzhQDj5zKJbXfIscCtg",
+        "title": "New documents from the Epstein files cause shockwaves around the world | 7.30",
+        "description": "Millions more documents relating to the late convicted sex offender Jeffrey Epstein were released by the US Department of Justice last week and observers are still poring over them.\n\nThe story the files tell is one of base corruption that stains all it touches. But Epstein was also a notorious liar and blackmailer, so the fact that he mentioned someone in his communications doesn't mean that they were part of his network.\n\n7.30’s Alysia Thomas Sam reports.\n\nSubscribe: https://ab.co/3yqPOZ5   \n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/YkgTV5RF8Pw/default.jpg",
+            "url": "https://i.ytimg.com/vi/vATDN8sXqn8/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/YkgTV5RF8Pw/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/vATDN8sXqn8/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/YkgTV5RF8Pw/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/vATDN8sXqn8/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/YkgTV5RF8Pw/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/vATDN8sXqn8/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/YkgTV5RF8Pw/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/vATDN8sXqn8/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "Дмитрий Толстяков",
+        "channelTitle": "ABC News In-depth",
         "tags": [
-          "инвестиции для начинающих",
-          "дивидендные акции",
-          "дивиденды",
-          "как инвестировать деньги",
-          "инвестиции в акции",
-          "облигации",
-          "инвестиции в облигации",
-          "акции для инвестиций",
-          "как заработать на фондовом рынке",
-          "финансовая грамотность",
-          "как начать инвестировать",
-          "инвестиции в золото",
-          "фондовый рынок",
-          "как создать инвестиционный портфель",
-          "портфель из облигаций",
-          "инвестиции для детей",
-          "как выбрать акции",
-          "офз",
-          "пассивный доход",
-          "какие акции купить",
-          "инвестиции 2025",
-          "облигации 2025",
-          "облигации рф"
+          "abc news",
+          "australian news",
+          "abc news indepth",
+          "documentaries",
+          "long-form journalism",
+          "epstein files",
+          "jeffrey epstein",
+          "prince andrew",
+          "andrew mountbatten-windsor",
+          "bill gates",
+          "abc",
+          "united states",
+          "Peter Mandelson",
+          "uk",
+          "clive palmer",
+          "elon musk",
+          "epstein",
+          "royal family",
+          "australia",
+          "world news"
         ],
-        "categoryId": "27",
+        "categoryId": "25",
         "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
+        "defaultLanguage": "en-GB",
         "localized": {
-          "title": "ПОРТФЕЛЬ ДЛЯ ДОЧЕРЕЙ, ИТОГИ 2025 / Обновление и покупки",
-          "description": "✅ Если хотите начать формировать пассивный доход, ссылка на бесплатное обучение: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n✅ Мой новый канал про историю и финансы: https://www.youtube.com/@TolDocks\n\nНовый выпуск портфеля для моих дочерей. Анализ текущего состояния: доходности, блокировки активов, рост облигаций и падение акций. Покупки: облигации, золото, ВТБ, Сбер, Т, Novatek, Алроса и др. Стратегия диверсификации, причины решений, прогнозы по рынку и геополитике. Узнайте, как я инвестирую в долгосрок и к чему это ведёт! \n\n*Цены в приложении брокера на момент просмотра видео могут отличаться.\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\n00:58 Обзор портфеля\n07:50 Аналитика портфеля\n12:53 Покупка активов\n22:45 Итоги\n\nПОРТФЕЛЬ ДЛЯ ДОЧЕРЕЙ, ИТОГИ 2025 / Обновление и покупки\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 года обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\nинвестиции\nдивидендные акции\nкакие акции купить\nпассивный доход\nоблигации\nперспективные облигации\nпортфель для дочек\nпортфель для дочерей\n\n#инвестиции #портфельдлядочерей #дмитрийтолстяков #акции #облигации  #Пассивныйдоход #тинькоффинвестиции​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #тинькофф #валюта #комиссия #ПрогнозДоллара #КурсДоллара #газпром #дивиденды #набиуллина #центральныйбанк #последниеновости"
+          "title": "New documents from the Epstein files cause shockwaves around the world | 7.30",
+          "description": "Millions more documents relating to the late convicted sex offender Jeffrey Epstein were released by the US Department of Justice last week and observers are still poring over them.\n\nThe story the files tell is one of base corruption that stains all it touches. But Epstein was also a notorious liar and blackmailer, so the fact that he mentioned someone in his communications doesn't mean that they were part of his network.\n\n7.30’s Alysia Thomas Sam reports.\n\nSubscribe: https://ab.co/3yqPOZ5   \n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia"
         },
-        "defaultAudioLanguage": "ru"
+        "defaultAudioLanguage": "en-GB"
       },
       "contentDetails": {
-        "duration": "PT24M5S",
+        "duration": "PT7M13S",
         "dimension": "2d",
         "definition": "hd",
-        "caption": "true",
+        "caption": "false",
         "licensedContent": true,
         "contentRating": {},
         "projection": "rectangular"
       },
       "statistics": {
-        "viewCount": "9100",
-        "likeCount": "527",
+        "viewCount": "471735",
+        "likeCount": "1803",
         "favoriteCount": "0",
-        "commentCount": "70"
+        "commentCount": "44"
       }
     },
     {
       "kind": "youtube#video",
-      "etag": "CBZIUbhcPzgs5KZoN5u-YIbwKuw",
-      "id": "DhHUgeBmrkA",
+      "etag": "QKkD4N-pt31pZ9ArcUdgP5ESDFw",
+      "id": "U0mT5eYtjNs",
       "snippet": {
-        "publishedAt": "2025-12-18T15:01:01Z",
-        "channelId": "UC5J6Do11WM_iKQ3uOPXd4Pg",
-        "title": "НОВЫЕ ЗАКОНЫ ДЕКАБРЯ! Новый паспорт, пенсии и потеря жилья — эти изменения коснутся каждого",
-        "description": "✅ Бесплатное обучение про пассивный доход: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n\nВ декабре вступили в силу новые законы, которые затрагивают каждого из нас. Некоторые изменения на первый взгляд кажутся мелочью, но последствия могут быть серьёзными — в этом видео разберем популярные новости: цифровой паспорт, повышение утильсбора, потеря жилья, реформа рассрочек, увеличение пенсий и многое другое. Подписывайтесь и смотрите до конца — обещаю, это будет полезно.\n\nНОВЫЕ ЗАКОНЫ ДЕКАБРЯ! Новый паспорт, пенсии и потеря жилья — эти изменения коснутся каждого\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\nТАЙМКОДЫ:\n00:00 Новости\n00:52 Утильсбор\n03:01 Фильм о машиностроении \n06:07 Цифровой паспорт в банке\n07:30 Ограничения на коллекторов\n08:22 Изменения в осаго\n09:18 Изменение рассрочки\n11:50 Усложнения для жильцов\n13:53 Рост пенсий\n15:42 Моя 2 зарплата\n16:25 Биометрия для иностранцев\n17:05 Короткая рабочая неделя\n\n►Не забудьте подписаться на канал: https://clck.ru/TKeRK\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 год обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\nновости сегодня\nновости октября\nглавные новости\nцифровой паспорт\nутильсбор \nэкономика \nфинансы\n\n#инвестиции #новости  #дмитрийтолстяков #акции #облигации  #Пассивныйдоход ​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #валюта #комиссия #ПрогнозДоллара #КурсДоллара #дивиденды #набиуллина #центральныйбанк #последниеновости #законы #законырф #новостисегодня",
+        "publishedAt": "2026-02-04T07:00:22Z",
+        "channelId": "UCxcrzzhQDj5zKJbXfIscCtg",
+        "title": "How Reagan reacted to the Challenger disaster | Planet America",
+        "description": "It’s 40 years since the space shuttle Challenger exploded in the deadliest accident in NASA's history to that time. As Planet America’s John Barron explains, the tragedy saw President Ronald Reagan rise to the moment with a speech that consoled the nation. Subscribe: https://ab.co/3yqPOZ5\n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia",
         "thumbnails": {
           "default": {
-            "url": "https://i.ytimg.com/vi/DhHUgeBmrkA/default.jpg",
+            "url": "https://i.ytimg.com/vi/U0mT5eYtjNs/default.jpg",
             "width": 120,
             "height": 90
           },
           "medium": {
-            "url": "https://i.ytimg.com/vi/DhHUgeBmrkA/mqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/U0mT5eYtjNs/mqdefault.jpg",
             "width": 320,
             "height": 180
           },
           "high": {
-            "url": "https://i.ytimg.com/vi/DhHUgeBmrkA/hqdefault.jpg",
+            "url": "https://i.ytimg.com/vi/U0mT5eYtjNs/hqdefault.jpg",
             "width": 480,
             "height": 360
           },
           "standard": {
-            "url": "https://i.ytimg.com/vi/DhHUgeBmrkA/sddefault.jpg",
+            "url": "https://i.ytimg.com/vi/U0mT5eYtjNs/sddefault.jpg",
             "width": 640,
             "height": 480
           },
           "maxres": {
-            "url": "https://i.ytimg.com/vi/DhHUgeBmrkA/maxresdefault.jpg",
+            "url": "https://i.ytimg.com/vi/U0mT5eYtjNs/maxresdefault.jpg",
             "width": 1280,
             "height": 720
           }
         },
-        "channelTitle": "Дмитрий Толстяков",
+        "channelTitle": "ABC News In-depth",
         "tags": [
-          "деньги",
-          "экономика",
-          "инвестиции",
-          "повышение утильсбора",
-          "главные новости",
-          "новости сегодня",
-          "новости октября",
-          "новости",
-          "финансы",
-          "инвестиции для начинающих",
-          "экономика россии",
-          "цифровой рубль",
-          "инвестиции в акции",
-          "финансовая грамотность",
-          "финансовая независимость",
-          "экономические новости",
-          "повышение зарплаты",
-          "что делать с деньгами",
-          "вклады",
-          "цб рф",
-          "страхование вкладов",
-          "толстяков",
-          "толстяков портфель для дочерей",
-          "осаго",
-          "цифровой паспорт",
-          "цифровой паспорт рф",
-          "пенсии в россии"
+          "abc news",
+          "australian news",
+          "abc news indepth",
+          "documentaries",
+          "long-form journalism",
+          "us news",
+          "history",
+          "explainer video",
+          "planet america",
+          "nasa",
+          "space",
+          "reagan",
+          "news",
+          "history documentary"
         ],
-        "categoryId": "27",
+        "categoryId": "25",
         "liveBroadcastContent": "none",
-        "defaultLanguage": "ru",
+        "defaultLanguage": "en-GB",
         "localized": {
-          "title": "НОВЫЕ ЗАКОНЫ ДЕКАБРЯ! Новый паспорт, пенсии и потеря жилья — эти изменения коснутся каждого",
-          "description": "✅ Бесплатное обучение про пассивный доход: https://fin-ra.ru/invest-salary-2025?utm_source=youtube\n\nВ декабре вступили в силу новые законы, которые затрагивают каждого из нас. Некоторые изменения на первый взгляд кажутся мелочью, но последствия могут быть серьёзными — в этом видео разберем популярные новости: цифровой паспорт, повышение утильсбора, потеря жилья, реформа рассрочек, увеличение пенсий и многое другое. Подписывайтесь и смотрите до конца — обещаю, это будет полезно.\n\nНОВЫЕ ЗАКОНЫ ДЕКАБРЯ! Новый паспорт, пенсии и потеря жилья — эти изменения коснутся каждого\n*Видео не является индивидуальной инвестиционной рекомендацией!\n\nТАЙМКОДЫ:\n00:00 Новости\n00:52 Утильсбор\n03:01 Фильм о машиностроении \n06:07 Цифровой паспорт в банке\n07:30 Ограничения на коллекторов\n08:22 Изменения в осаго\n09:18 Изменение рассрочки\n11:50 Усложнения для жильцов\n13:53 Рост пенсий\n15:42 Моя 2 зарплата\n16:25 Биометрия для иностранцев\n17:05 Короткая рабочая неделя\n\n►Не забудьте подписаться на канал: https://clck.ru/TKeRK\n\nНемного обо мне:\n– Учредитель школы безопасных инвестиций FIN-RA, выдаю mini MBA по инвестированию\n– Эксперт по стратегиям пассивных инвестиций, международный финансовый советник\n– Эксперт национального центра финансовой грамотности, Финансовый университет при Правительстве РФ\n– Финансовый Советник 2019 года в рамках Всероссийского конкурса (Амикс)\n– Награда «Лучшая школа в области инвестиций» (Private Money Forum 2021)\n– За 2017-2025 год обучил более 150 000 человек безопасному инвестированию\n\nШкола безопасных инвестиций FIN-RA:\n– Профессиональное онлайн-обучение для частных инвесторов №1* в России. Обучаем, как безопасно начать инвестировать с нуля и создать капитал «навсегда»;\n– Есть образовательная лицензия и международная сертификация;\n– «Лучшая школа в области инвестиций» (Private Money Forum 2019, 2021,2023);\n– «Самая популярная онлайн-школа по инвестициям в России» \n(по данным исследования Discovery Research Group).\n\nПодписывайтесь на канал! Научитесь грамотно инвестировать: https://clck.ru/TKeRK\nВидео не является индивидуальной инвестиционной рекомендацией.\n\nновости сегодня\nновости октября\nглавные новости\nцифровой паспорт\nутильсбор \nэкономика \nфинансы\n\n#инвестиции #новости  #дмитрийтолстяков #акции #облигации  #Пассивныйдоход ​ #инвестициидляначинающих​ #рубль​ #кудаинвестироватьденьги #облигации​​ #доллар #курсдоллара #дивиденды #валюта #комиссия #ПрогнозДоллара #КурсДоллара #дивиденды #набиуллина #центральныйбанк #последниеновости #законы #законырф #новостисегодня"
+          "title": "How Reagan reacted to the Challenger disaster | Planet America",
+          "description": "It’s 40 years since the space shuttle Challenger exploded in the deadliest accident in NASA's history to that time. As Planet America’s John Barron explains, the tragedy saw President Ronald Reagan rise to the moment with a speech that consoled the nation. Subscribe: https://ab.co/3yqPOZ5\n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia"
         },
-        "defaultAudioLanguage": "ru"
+        "defaultAudioLanguage": "en-GB"
       },
       "contentDetails": {
-        "duration": "PT18M19S",
+        "duration": "PT2M41S",
         "dimension": "2d",
         "definition": "hd",
-        "caption": "true",
+        "caption": "false",
         "licensedContent": true,
         "contentRating": {},
         "projection": "rectangular"
       },
       "statistics": {
-        "viewCount": "3289",
-        "likeCount": "192",
-        "favoriteCount": "0",
-        "commentCount": "23"
+        "viewCount": "3203",
+        "likeCount": "45",
+        "favoriteCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "ecJR-YMJaJxKMyQOu7yGJIAYWP8",
+      "id": "tY8RSWxRxpE",
+      "snippet": {
+        "publishedAt": "2026-02-04T06:15:05Z",
+        "channelId": "UCxcrzzhQDj5zKJbXfIscCtg",
+        "title": "Jason Donovan talks 1980s Neighbours mania | Australian Story (2001)",
+        "description": "\"Neighbours in England was like Beatlemania!\" \n\nin 2001 Jason Donovan told Australian Story about wild fan scenes at the height of Neighbours fame, and why he struggled to snag more acting roles after the hype.\n\n📺Australian Story is opening the archives vault in 2026 to celebrate the program's 30th anniversary!\n\n#AustralianStory ##Neighbour #JasonDonovan \n\nSubscribe: https://ab.co/3yqPOZ5\n\n\nAbout Australian Story: The power of the personal. Compelling stories about real people that illuminate, entertain and inspire. \n\nWatch more Australian Story documentaries here: https://bit.ly/36ABH2J \nLike us on Facebook: www.facebook.com/abcaustralianstory \n\n______________________________________________________________\n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/tY8RSWxRxpE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/tY8RSWxRxpE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/tY8RSWxRxpE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/tY8RSWxRxpE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/tY8RSWxRxpE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ABC News In-depth",
+        "tags": [
+          "abc news",
+          "australian news",
+          "abc news indepth",
+          "documentaries",
+          "long-form journalism",
+          "Australian Story",
+          "Jason Donovan",
+          "Neighbours",
+          "Neighbours Kylie Minogue",
+          "Neighbours England",
+          "neighbors series australia",
+          "Neighbours 80s",
+          "Neighbours fans",
+          "Neighbours fans shopping centre",
+          "Guy Pearce",
+          "Australian television"
+        ],
+        "categoryId": "25",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en-GB",
+        "localized": {
+          "title": "Jason Donovan talks 1980s Neighbours mania | Australian Story (2001)",
+          "description": "\"Neighbours in England was like Beatlemania!\" \n\nin 2001 Jason Donovan told Australian Story about wild fan scenes at the height of Neighbours fame, and why he struggled to snag more acting roles after the hype.\n\n📺Australian Story is opening the archives vault in 2026 to celebrate the program's 30th anniversary!\n\n#AustralianStory ##Neighbour #JasonDonovan \n\nSubscribe: https://ab.co/3yqPOZ5\n\n\nAbout Australian Story: The power of the personal. Compelling stories about real people that illuminate, entertain and inspire. \n\nWatch more Australian Story documentaries here: https://bit.ly/36ABH2J \nLike us on Facebook: www.facebook.com/abcaustralianstory \n\n______________________________________________________________\n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews"
+        },
+        "defaultAudioLanguage": "en-GB"
+      },
+      "contentDetails": {
+        "duration": "PT1M9S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "9566",
+        "likeCount": "81",
+        "favoriteCount": "0"
+      }
+    },
+    {
+      "kind": "youtube#video",
+      "etag": "8mmWB1QylXiD1F60bfAyvzs2v98",
+      "id": "2Wfy0EuO57w",
+      "snippet": {
+        "publishedAt": "2026-02-04T01:00:05Z",
+        "channelId": "UCxcrzzhQDj5zKJbXfIscCtg",
+        "title": "How much training do ICE officers get? | Planet America",
+        "description": "John Barron and Chas Licciardello highlight how ICE officers receive less training than almost every other type of US law enforcement.\nSubscribe: https://ab.co/3yqPOZ5\n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2Wfy0EuO57w/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2Wfy0EuO57w/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2Wfy0EuO57w/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2Wfy0EuO57w/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/2Wfy0EuO57w/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "ABC News In-depth",
+        "tags": [
+          "abc news",
+          "australian news",
+          "abc news indepth",
+          "documentaries",
+          "long-form journalism",
+          "donald trump",
+          "minneapolis",
+          "minnesota",
+          "united states",
+          "ICE",
+          "explainer videos",
+          "current affairs",
+          "trump",
+          "alex pretti",
+          "border security"
+        ],
+        "categoryId": "25",
+        "liveBroadcastContent": "none",
+        "defaultLanguage": "en-GB",
+        "localized": {
+          "title": "How much training do ICE officers get? | Planet America",
+          "description": "John Barron and Chas Licciardello highlight how ICE officers receive less training than almost every other type of US law enforcement.\nSubscribe: https://ab.co/3yqPOZ5\n\nWelcome to ABC News In-depth, where you'll find our long-form journalism and other videos to help you understand what's going on in the world around you.\n\nWatch more ABC News content ad-free on ABC iview: https://ab.co/2OB7Mk1\n\nFor more from ABC News, click here: https://ab.co/2kxYCZY\n\nGet breaking news and livestreams from our ABC News channel: https://www.youtube.com/user/NewsOnABC\nLike ABC News on Facebook: http://facebook.com/abcnews.au\nFollow ABC News on Instagram: http://instagram.com/abcnews_au\nFollow ABC News on Twitter: http://twitter.com/abcnews\n\nNote: In most cases, our captions are auto-generated.\n\n#ABCNewsIndepth #ABCNewsAustralia"
+        },
+        "defaultAudioLanguage": "en-GB"
+      },
+      "contentDetails": {
+        "duration": "PT1M7S",
+        "dimension": "2d",
+        "definition": "hd",
+        "caption": "false",
+        "licensedContent": true,
+        "contentRating": {},
+        "projection": "rectangular"
+      },
+      "statistics": {
+        "viewCount": "19970",
+        "likeCount": "500",
+        "favoriteCount": "0"
       }
     }
   ],
   "pageInfo": {
-    "totalResults": 17,
-    "resultsPerPage": 17
+    "totalResults": 9,
+    "resultsPerPage": 9
   }
 }

@@ -324,14 +324,14 @@ def run_sync():
             print("STEP 2 ERROR:", e)
 
     if get_last_channel_videos:
-        print("STEP 3: get last channel videos")
+        print("STEP 3: get channel video ids")
         try:
-            cursor.execute("SELECT channel_id FROM channels_main WHERE last_published_at='' LIMIT 5")
+            cursor.execute("SELECT channel_id FROM channels_main WHERE last_published_at=''")
             fresh_channels = [r[0] for r in cursor.fetchall()]
             if fresh_channels:
                 all_video_ids = collector.get_channel_videos(
                     fresh_channels,
-                    max_videos=5,
+                    max_videos=50,
                     until_date=datetime.utcnow() - timedelta(days=90)
                 )
                 get_video_details_ids.extend(all_video_ids)
@@ -355,7 +355,7 @@ if __name__ == "__main__":
     # ----------------------------
     for key in [c["api_key"] for c in api_configs]:
         status = quota_manager.get_status(key)
-        print(f"Quota {key}: {status}")
+        print(f"Quota {key[:5]}...: {status}")
     
     run_sync()         # синхронний
     #asyncio.run(run_async())  # Асинхронний
@@ -365,7 +365,7 @@ if __name__ == "__main__":
     # ----------------------------
     for key in [c["api_key"] for c in api_configs]:
         status = quota_manager.get_status(key)
-        print(f"Final quota status for {key}: {status}")
+        print(f"Final quota {key[:5]}...: {status}")
 
 
 """

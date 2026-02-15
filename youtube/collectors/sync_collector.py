@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 import threading
 import isodate
 
+
 class YouTubeCollector:
     def __init__(self, api_wrapper, db_path=None, conn=None):
         self.api = api_wrapper
@@ -378,6 +379,10 @@ class YouTubeCollector:
     # ====================================================
     def get_video_details(self, video_ids):
         rows_main, rows_snippet, rows_stats = [], [], []
+        
+        from collections import defaultdict
+        thumb_type_counter = defaultdict(int)
+        thumb_size_counter = defaultdict(int)
 
         # --- витягуємо існуючі is_short щоб не перезаписати 5 ---
         existing_flags = {}
@@ -406,16 +411,39 @@ class YouTubeCollector:
 
             for item in response.get("items", []):
                 vid = item["id"]
+                
+                duration_raw = item.get("contentDetails", {}).get("duration")
+                duration = 0
 
-                duration = int(round(
-                    isodate.parse_duration(item["contentDetails"]["duration"]).total_seconds()
-                ))
+                if duration_raw:
+                    try:
+                        duration = int(
+                            isodate.parse_duration(duration_raw).total_seconds()
+                        )
+                    except Exception as e:
+                        print(f"Duration parse error for video {item.get('id')}: {duration_raw}")
+                        duration = 0
 
                 # --- логіка захисту прапора Shorts ---
                 if existing_flags.get(vid) == 5:
                     is_short = 5
                 else:
                     is_short = 1 if 0 < duration <= 60 else 0
+                    
+                # --- збір статистики по thumbnail для Shorts (<60 сек) ---
+                if 0 < duration < 60:
+                    thumbnails = item["snippet"].get("thumbnails", {})
+                    
+                    for thumb_type, thumb_data in thumbnails.items():
+                        # тип (default, medium, high, standard, maxres)
+                        thumb_type_counter[thumb_type] += 1
+                        
+                        # розмір
+                        width = thumb_data.get("width")
+                        height = thumb_data.get("height")
+                        if width and height:
+                            size_key = f"{width}x{height}"
+                            thumb_size_counter[size_key] += 1
 
                 row_main = {
                     "video_id": vid,
@@ -454,6 +482,14 @@ class YouTubeCollector:
         self._upsert_df(df_main, "videos_main", ["video_id"])
         self._upsert_df(df_snippet, "videos_snippet")
         self._upsert_df(df_stats, "videos_stats")
+        
+        print("\n--- Thumbnail TYPE stats (Shorts < 60s) ---")
+        for k, v in sorted(thumb_type_counter.items()):
+            print(f"{k}: {v} шт")
+        
+        print("\n--- Thumbnail SIZE stats (Shorts < 60s) ---")
+        for k, v in sorted(thumb_size_counter.items()):
+            print(f"{k}: {v} шт")
 
         return df_main
         
