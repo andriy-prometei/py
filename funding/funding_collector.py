@@ -13,162 +13,113 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 ====================
 за часом обробки (секунди):
 --------------------
-  1995.9 с   tokocrypto
-  1965.9 с   mexc
-  1831.9 с   gate
-  1749.5 с   bitmart
-  1735.0 с   lbank
-  1612.7 с   bingx
-  1302.1 с   phemex
-  1285.6 с   htx
-  1284.3 с   bitget
-  1272.6 с   latoken
-  1271.8 с   huobi
-  1203.7 с   toobit
-  1192.6 с   xt
-  1192.0 с   bitrue
-  1049.3 с   bybit
-   910.1 с   ascendex
-   871.3 с   deepcoin
-   815.5 с   coinex
-   789.7 с   kucoin
-   777.2 с   kraken
-   767.4 с   cryptocom
-   759.0 с   coinbase
-   726.7 с   okx
-   726.3 с   binance
-   535.3 с   poloniex
-   512.3 с   bydfi
-   508.4 с   bigone
-   506.5 с   cex
-   501.6 с   hitbtc
-   462.0 с   blofin
-   429.6 с   aster
-   395.7 с   bitmex
-   349.2 с   digifinex
-   335.3 с   upbit
-   333.4 с   whitebit
-   320.3 с   novadax
-   297.8 с   bitfinex
-   285.5 с   bitbns
-   262.5 с   coinbaseexchange
-   250.9 с   fmfwio
-   211.0 с   btcturk
-   200.4 с   bitso
-   181.4 с   independentreserve
-   181.0 с   zonda
-   164.9 с   woo
-   138.7 с   p2b
-   127.7 с   backpack
-   121.7 с   exmo
-    94.6 с   bitstamp
-    93.4 с   hashkey
-    91.9 с   ndax
-    90.7 с   foxbit
-    90.0 с   blockchaincom
-    88.3 с   coinsph
-    88.1 с   delta
-    84.4 с   timex
-    61.7 с   arkham
-    59.7 с   cryptomus
-    58.1 с   bequant
-    57.7 с   apex
-    47.9 с   hollaex
-    44.3 с   bitteam
-    37.3 с   derive
-    34.8 с   onetrading
-    34.5 с   alp
-    28.7 с   zaif
-    24.9 с   bitopro
-    16.5 с   defx
-    16.4 с   coinspot
-    12.7 с   wavesexchange
-    10.1 с   bit2c
-     6.4 с   gemini
-     6.2 с   modetrade
-     6.0 с   deribit
-     4.2 с   paradex
-     4.0 с   coincatch
-     3.8 с   zebpay
-     3.3 с   dydx
-     3.0 с   paymium
-     2.3 с   mercado
-     2.1 с   oxfun
-     1.9 с   luno
-     1.7 с   coincheck
-     1.6 с   indodax
-     1.6 с   bithumb
-     1.6 с   woofipro
-     1.6 с   hibachi
-     1.3 с   binanceus
-     1.2 с   bittrade
-     1.1 с   btcbox
-     1.0 с   bitvavo
-     0.9 с   bitbank
-     0.9 с   bitflyer
-     0.9 с   coinone
-     0.6 с   bullish
-     0.4 с   btcmarkets
-     0.2 с   alpaca
-====================
-
-====================
-за часом обробки (секунди):
---------------------
-  2245.0 с   kraken
-  1876.0 с   lbank
-  1747.0 с   gate
-  1697.9 с   mexc
-  1643.8 с   bitmart
-  1419.8 с   binance
-  1286.5 с   toobit
-  1259.0 с   kucoin
-  1192.5 с   bitget
-  1120.5 с   bingx
-   985.6 с   xt
-   944.2 с   bybit
-   849.5 с   coinbase
-   821.2 с   okx
-   819.7 с   coinex
-   765.4 с   ascendex
-   752.9 с   huobi
-   621.7 с   poloniex
-   597.8 с   bydfi
-   508.4 с   aster
-   496.1 с   whitebit
-   416.6 с   bitmex
-   316.3 с   bitfinex
-   275.7 с   woo
-   190.3 с   digifinex
-   127.2 с   backpack
-    94.5 с   hashkey
-    49.0 с   deribit
-====================
-
-====================
-за часом обробки (секунди):
---------------------
-   730.8 с   bitmart
-   402.3 с   xt
-   389.3 с   gate
-   369.5 с   bitget
-   353.1 с   binance
-   258.5 с   huobi
-   238.5 с   bitmex
-   223.0 с   okx
-   181.2 с   whitebit
+   709.2 с   bitmart
+   397.7 с   bitget
+   375.7 с   binance
+   366.0 с   bingx
+   365.4 с   mexc
+   344.0 с   bybit
+   335.7 с   phemex
+   322.9 с   gate
+   309.5 с   xt
+   298.8 с   bydfi
+   291.8 с   deepcoin
+   267.0 с   kucoin
+   246.5 с   aster
+   239.1 с   bitmex
+   235.2 с   blofin
+   216.4 с   kraken
+   208.8 с   bitso
+   182.7 с   cryptocom
+   181.5 с   ascendex
+   179.9 с   independentreserve
+   171.3 с   htx
+   170.2 с   huobi
+   150.5 с   okx
+   144.3 с   woo
+   117.1 с   whitebit
+    93.8 с   digifinex
+    90.4 с   bitfinex
+    88.1 с   ndax
+    82.1 с   bitrue
+    82.1 с   backpack
+    80.2 с   delta
+    70.9 с   coinex
+    69.4 с   coinbase
+    63.1 с   deribit
+    57.0 с   cex
+    53.1 с   derive
+    46.5 с   bigone
+    42.3 с   hyperliquid
+    38.8 с   coinspot
+    35.4 с   coincatch
+    33.7 с   zaif
+    33.0 с   wavesexchange
+    30.7 с   defx
+    28.2 с   fmfwio
+    24.1 с   btcturk
+    21.5 с   bitstamp
+    20.5 с   coinsph
+    18.3 с   bequant
+    17.2 с   hashkey
+    16.7 с   apex
+    14.5 с   hitbtc
+    14.2 с   foxbit
+    13.7 с   arkham
+    13.5 с   blockchaincom
+    13.2 с   bitbns
+    13.2 с   exmo
+    13.0 с   alp
+    12.5 с   bitteam
+    11.4 с   poloniex
+    11.2 с   bit2c
+    10.8 с   cryptomus
+     8.8 с   dydx
+     8.4 с   bitopro
+     7.6 с   latoken
+     7.2 с   woofipro
+     6.8 с   gemini
+     6.6 с   toobit
+     5.6 с   timex
+     5.2 с   upbit
+     4.4 с   hollaex
+     4.4 с   onetrading
+     3.9 с   modetrade
+     3.9 с   paradex
+     3.7 с   zebpay
+     3.7 с   btcbox
+     3.5 с   bullish
+     3.4 с   bitvavo
+     3.3 с   coinone
+     3.2 с   btcmarkets
+     3.0 с   bittrade
+     2.8 с   coincheck
+     2.8 с   zonda
+     2.8 с   p2b
+     2.4 с   bithumb
+     2.3 с   lbank
+     2.2 с   novadax
+     2.0 с   bitflyer
+     1.7 с   alpaca
+     1.7 с   bitbank
+     1.0 с   indodax
+     0.9 с   paymium
+     0.5 с   mercado
+     0.4 с   oxfun
+     0.4 с   luno
+     0.4 с   hibachi
 ====================
 """
 
 # Приклади використання (змініть на свої потреби)
-WHITELIST = ['whitebit']#['binance', 'bitget', 'bitmart',  'bitmex', 'gate', 'huobi', 'okx', 'whitebit', 'xt']#['ascendex', 'aster', 'backpack', 'binance', 'bingx', 'bitfinex', 'bitget', 'bitmart', 'bitmex', 'bybit', 'bydfi', 'coinbase', 'coinex', 'deribit', 'digifinex', 'hashkey', 'huobi', 'gate', 'kraken', 'kucoin', 'lbank', 'mexc', 'okx', 'poloniex', 'toobit', 'woo', 'whitebit', 'xt'] # якщо заповнити — запускатимуться ТІЛЬКИ ці біржі
+WHITELIST = []#['ascendex', 'aster', 'backpack', 'binance', 'bingx', 'bitfinex', 'bitget', 'bitmart', 'bitmex', 'bybit', 'bydfi', 'coinbase', 'coinex', 'deribit', 'digifinex', 'hashkey', 'huobi', 'hyperliquid', 'gate', 'kraken', 'kucoin', 'lbank', 'mexc', 'okx', 'poloniex', 'toobit', 'woo', 'whitebit', 'xt'] # якщо заповнити — запускатимуться ТІЛЬКИ ці біржі
 BLACKLIST = [
     'binancecoinm', 'binanceus',
     'testnet', 'sandbox', 'demo',   # тестові
     'okxus', 'myokx', #okx aliases
     'gateio', # alias to gate
-    'coinbaseadvanced', 'coinbaseinternational', # alias to coinbase
-    'hyperliquid', 'yobit', # slow data extraction
+    'coinbaseadvanced', 'coinbaseinternational', 'coinbaseexchange', # alias to coinbase
+    'tokocrypto', 'yobit', # slow data extraction
 ]
 
 # Автоматичні пропуски (futures-класи, які дублюють unified)
@@ -584,6 +535,11 @@ def fetch_exchange_data(exchange_name):
         # ========= DATA =========
 
         symbol_data = {}
+        
+        # ПЕРЕВІРКА ПІДТРИМКИ FUNDING RATE
+        can_fetch_funding = futures_ex.has.get('fetchFundingRate', False)
+        if not can_fetch_funding:
+            logger.warning(f"{exchange_name} does not support fetchFundingRate()")
 
         # ---------- FUTURES ----------
         for perp_symbol, perp_market in perpetual_markets.items():
@@ -639,8 +595,7 @@ def fetch_exchange_data(exchange_name):
                         break
 
             # ===== FUNDING =====
-            #print('funding_symbol', funding_symbol)
-            if funding_symbol:
+            if funding_symbol and can_fetch_funding:
                 try:
                     fr_data = futures_ex.fetch_funding_rate(funding_symbol)
                     #print('fr_data', fr_data)
@@ -666,11 +621,7 @@ def fetch_exchange_data(exchange_name):
                         )
 
                         row['next_funding_utc'] = next_dt.isoformat()
-                        row['countdown_sec'] = max(
-                            0,
-                            (next_dt - datetime.now(timezone.utc))
-                            .total_seconds()
-                        )
+                        row['countdown_sec'] = int((next_dt - datetime.now(timezone.utc)).total_seconds())
 
                 except Exception as e:
                     print(f"{exchange_name} funding error:", funding_symbol, str(e)[:120])

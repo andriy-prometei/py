@@ -6,12 +6,25 @@ from datetime import datetime
 from pathlib import Path
 
 # Список бірж, де next_funding_utc = None
-PROBLEM_EXCHANGES = ['whitebit']
-"""[
-    'gate', 'lbank', 'bitmart', 'kraken', 'coinex',
-    'kucoin', 'xt', 'coinbase', 'poloniex', 'bitget',
-    'whitebit', 'huobi', 'bitmex', 'deribit'
-]"""
+PROBLEM_EXCHANGES = [
+    "bitmart", "bitget", "binance", "bingx", "mexc", "bybit", 
+    "phemex", "gate", "xt", "bydfi", "deepcoin", "kucoin", 
+    "aster", "bitmex", "blofin", "kraken", "bitso", "cryptocom", 
+    "ascendex", "independentreserve", "htx", "huobi", "okx", "woo", 
+    "whitebit", "digifinex", "bitfinex", "ndax", "bitrue", "backpack", 
+    "delta", "coinex", "coinbase", "deribit", "cex", "derive", 
+    "bigone", "hyperliquid", "coinspot", "coincatch", "zaif", 
+    "wavesexchange", "defx", "fmfwio", "btcturk", "bitstamp", 
+    "coinsph", "bequant", "hashkey", "apex", "hitbtc", "foxbit", 
+    "arkham", "blockchaincom", "bitbns", "exmo", "alp", "bitteam", 
+    "poloniex", "bit2c", "cryptomus", "dydx", "bitopro", "latoken", 
+    "woofipro", "gemini", "toobit", "timex", "upbit", "hollaex", 
+    "onetrading", "modetrade", "paradex", "zebpay", "btcbox", 
+    "bullish", "bitvavo", "coinone", "btcmarkets", "bittrade", 
+    "coincheck", "zonda", "p2b", "bithumb", "lbank", "novadax", 
+    "bitflyer", "alpaca", "bitbank", "indodax", "paymium", 
+    "mercado", "oxfun", "luno", "hibachi",
+]
 
 OUTPUT_DIR = Path("funding_raw_debug")
 OUTPUT_DIR.mkdir(exist_ok=True)
