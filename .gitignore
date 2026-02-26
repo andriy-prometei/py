@@ -4,9 +4,16 @@ youtube/youtube-data/*
 !youtube/youtube-data/.gitkeep
 
 # Ігноруємо все в папці soft
-soft/*
+ff-video/soft/*
 # Але залишаємо файл .gitkeep
-!soft/.gitkeep
+!ff-video/soft/.gitkeep
+
+funding/results
+funding/funding_results
+funding/analysis_output
+
+*.log
+*.pid
 
 
 # Byte-compiled / optimized / DLL files
