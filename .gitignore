@@ -13,6 +13,8 @@ funding/funding_results
 funding/analysis_output
 
 *.log
+*.csv
+*.json
 *.pid
 
 

@@ -144,10 +144,24 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
     94.5 с   hashkey
     49.0 с   deribit
 ====================
+
+====================
+за часом обробки (секунди):
+--------------------
+   730.8 с   bitmart
+   402.3 с   xt
+   389.3 с   gate
+   369.5 с   bitget
+   353.1 с   binance
+   258.5 с   huobi
+   238.5 с   bitmex
+   223.0 с   okx
+   181.2 с   whitebit
+====================
 """
 
 # Приклади використання (змініть на свої потреби)
-WHITELIST = ['ascendex', 'aster', 'backpack', 'binance', 'bingx', 'bitfinex', 'bitget', 'bitmart', 'bitmex', 'bybit', 'bydfi', 'coinbase', 'coinex', 'deribit', 'digifinex', 'hashkey', 'huobi', 'gate', 'kraken', 'kucoin', 'lbank', 'mexc', 'okx', 'poloniex', 'toobit', 'woo', 'whitebit', 'xt'] # якщо заповнити — запускатимуться ТІЛЬКИ ці біржі
+WHITELIST = ['whitebit']#['binance', 'bitget', 'bitmart',  'bitmex', 'gate', 'huobi', 'okx', 'whitebit', 'xt']#['ascendex', 'aster', 'backpack', 'binance', 'bingx', 'bitfinex', 'bitget', 'bitmart', 'bitmex', 'bybit', 'bydfi', 'coinbase', 'coinex', 'deribit', 'digifinex', 'hashkey', 'huobi', 'gate', 'kraken', 'kucoin', 'lbank', 'mexc', 'okx', 'poloniex', 'toobit', 'woo', 'whitebit', 'xt'] # якщо заповнити — запускатимуться ТІЛЬКИ ці біржі
 BLACKLIST = [
     'binancecoinm', 'binanceus',
     'testnet', 'sandbox', 'demo',   # тестові
@@ -187,6 +201,179 @@ def get_exchanges_to_run():
     return sorted(candidates)
 
 
+def _ts_to_iso(ts_ms: int):
+    return datetime.fromtimestamp(ts_ms / 1000, tz=timezone.utc).isoformat()
+    
+
+def patch_funding_parsers():
+    print("Applying funding parser patches...")
+
+    # ===========
+    # BITGET
+    # ===========
+    if hasattr(ccxt, "bitget"):
+        original_bitget = ccxt.bitget.parse_funding_rate
+
+        def patched_bitget(self, info, market=None):
+            parsed = original_bitget(self, info, market)
+
+            if isinstance(info, dict) and info.get("nextUpdate"):
+                try:
+                    ts = int(info["nextUpdate"])
+                    parsed["nextFundingTimestamp"] = ts
+                    parsed["nextFundingDatetime"] = _ts_to_iso(ts)
+                except Exception:
+                    pass
+
+            return parsed
+
+        ccxt.bitget.parse_funding_rate = patched_bitget
+
+    # ===========
+    # BITMART
+    # ===========
+    if hasattr(ccxt, "bitmart"):
+        original_bitmart = ccxt.bitmart.parse_funding_rate
+
+        def patched_bitmart(self, info, market=None):
+            parsed = original_bitmart(self, info, market)
+
+            if isinstance(info, dict) and info.get("funding_time"):
+                try:
+                    ts = int(info["funding_time"])
+                    parsed["nextFundingTimestamp"] = ts
+                    parsed["nextFundingDatetime"] = _ts_to_iso(ts)
+                except Exception:
+                    pass
+
+            return parsed
+
+        ccxt.bitmart.parse_funding_rate = patched_bitmart
+
+    # ===========
+    # BITMEX
+    # ===========
+    if hasattr(ccxt, "bitmex"):
+        original_bitmex = ccxt.bitmex.parse_funding_rate
+
+        def patched_bitmex(self, info, market=None):
+            parsed = original_bitmex(self, info, market)
+
+            if isinstance(info, dict) and info.get("fundingTimestamp"):
+                try:
+                    iso = info["fundingTimestamp"]
+                    dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+                    ts = int(dt.timestamp() * 1000)
+
+                    parsed["nextFundingTimestamp"] = ts
+                    parsed["nextFundingDatetime"] = dt.isoformat()
+
+                except Exception:
+                    pass
+
+            return parsed
+
+        ccxt.bitmex.parse_funding_rate = patched_bitmex
+
+    # ===========
+    # GATE
+    # ===========
+    if hasattr(ccxt, "gate"):
+        original_gate = ccxt.gate.parse_funding_rate
+
+        def patched_gate(self, info, market=None):
+            parsed = original_gate(self, info, market)
+
+            if isinstance(info, dict) and info.get("funding_next_apply"):
+                try:
+                    ts = int(info["funding_next_apply"]) * 1000
+                    parsed["nextFundingTimestamp"] = ts
+                    parsed["nextFundingDatetime"] = _ts_to_iso(ts)
+                except Exception:
+                    pass
+
+            return parsed
+
+        ccxt.gate.parse_funding_rate = patched_gate
+
+    # ===========
+    # HUOBI
+    # ===========
+    if hasattr(ccxt, "huobi"):
+        original_huobi = ccxt.huobi.parse_funding_rate
+
+        def patched_huobi(self, info, market=None):
+            parsed = original_huobi(self, info, market)
+
+            # fallback якщо CCXT не поставив
+            if parsed.get("nextFundingTimestamp") is None:
+
+                ts = info.get("fundingTimestamp") or info.get("nextFundingTime")
+
+                if ts:
+                    try:
+                        ts = int(ts)
+                        parsed["nextFundingTimestamp"] = ts
+                        parsed["nextFundingDatetime"] = _ts_to_iso(ts)
+                    except Exception:
+                        pass
+
+            return parsed
+
+        ccxt.huobi.parse_funding_rate = patched_huobi
+
+    # ===========
+    # WHITEBIT
+    # ===========
+    if hasattr(ccxt, "whitebit"):
+        original_whitebit = ccxt.whitebit.parse_funding_rate
+
+        def patched_whitebit(self, info, market=None):
+            parsed = original_whitebit(self, info, market)
+
+            # ADD THIS CHECK: Ensure 'parsed' is not None before proceeding
+            if parsed is None:
+                return None
+
+            if isinstance(info, dict) and info.get("next_funding_rate_timestamp"):
+                try:
+                    ts = int(info["next_funding_rate_timestamp"])
+                    parsed["nextFundingTimestamp"] = ts
+                    parsed["nextFundingDatetime"] = _ts_to_iso(ts)
+                except Exception:
+                    pass
+
+            return parsed
+
+        ccxt.whitebit.parse_funding_rate = patched_whitebit
+
+    # ===========
+    # XT
+    # ===========
+    if hasattr(ccxt, "xt"):
+        original_xt = ccxt.xt.parse_funding_rate
+
+        def patched_xt(self, info, market=None):
+            parsed = original_xt(self, info, market)
+
+            if isinstance(info, dict) and info.get("nextCollectionTime"):
+                try:
+                    ts = int(info["nextCollectionTime"])
+                    parsed["nextFundingTimestamp"] = ts
+                    parsed["nextFundingDatetime"] = _ts_to_iso(ts)
+                except Exception:
+                    pass
+
+            return parsed
+
+        ccxt.xt.parse_funding_rate = patched_xt
+
+    print("✅ Funding parser patches applied")
+
+# Викликати один раз на початку програми
+patch_funding_parsers()
+
+
 # Глобальні змінні для моніторингу
 exchange_times = {}  # exchange_name → seconds
 active_tasks = set() # які біржі обробляються
@@ -202,7 +389,7 @@ def monitoring_thread():
     while not done:
         elapsed = time.time() - start_time
 
-        if elapsed >= 600:
+        if elapsed >= 300:
             print_after_10min = True
 
         if print_after_10min and int(elapsed) % 60 == 0:
@@ -295,7 +482,7 @@ def build_exchange_pairs():
 def extract_next_funding_ts(data):
     next_ts = None
     for k in [
-        'nextFundingTime', 'nextFundingTimestamp',
+        'nextFundingTime', 'nextFundingTimestamp', 'fundingTimestamp',
         'nextSettleTime', 'fundingNext', 'nextFunding',
         'fundingTimeNext', 'settleTime'
     ]:
@@ -308,6 +495,7 @@ def extract_next_funding_ts(data):
         next_ts = (
             info.get('nextFundingTime') or
             info.get('nextFundingTimestamp') or
+            info.get('fundingTimestamp') or
             info.get('nextSettleTime') or
             info.get('fundingNext')
         )
@@ -316,165 +504,233 @@ def extract_next_funding_ts(data):
 
 # ==== Основна функція збору даних ====
 def fetch_exchange_data(exchange_name):
-    """
-    Збирає funding rate, next funding time та bid/ask для perpetual swaps + spot на біржі.
-    Підтримує випадки, коли spot та futures — різні класи (наприклад binance → binanceusdm).
-    """
+
     start_time = time.perf_counter()
+
     try:
-        # Пропускаємо чисті futures-класи, якщо вони вже оброблені через пару
         if exchange_name in EXCHANGE_PAIRS.values():
-            logger.debug(f"Пропускаємо окремий запуск futures-класу: {exchange_name}")
             return []
 
         timestamp = datetime.now(timezone.utc).isoformat()
 
-        # Визначаємо класи
-        spot_class_name   = exchange_name
+        spot_class_name = exchange_name
         futures_class_name = EXCHANGE_PAIRS.get(exchange_name)
 
-        # Ініціалізуємо екземпляри
-        spot_ex = None
-        futures_ex = None
+        # ========= CLIENTS =========
+        
+        spot_ex = getattr(ccxt, spot_class_name)({
+            'enableRateLimit': True,
+            'timeout': 30000,
+            'options': {'defaultType': 'spot'}
+        })
+        futures_ex = getattr(
+            ccxt,
+            futures_class_name or spot_class_name
+        )({
+            'enableRateLimit': True,
+            'timeout': 30000,
+            'options': {'defaultType': 'swap'}
+        })
 
-        if spot_class_name:
-            spot_ex = getattr(ccxt, spot_class_name)({
-                'enableRateLimit': True,
-                'timeout': 30000,
-            })
+        # ========= MARKETS =========
 
-        if futures_class_name:
-            futures_ex = getattr(ccxt, futures_class_name)({
-                'enableRateLimit': True,
-                'timeout': 30000,
-                'options': {'defaultType': 'swap'},
-            })
+        spot_markets = spot_ex.load_markets()
+        futures_markets = futures_ex.load_markets()
+        #print(futures_markets['BTC/USDT:USDT'])
 
-        # Якщо немає futures — використовуємо spot як основний для ф’ючерсів (okx, bybit, gate тощо)
-        main_futures_ex = futures_ex or spot_ex
-        if not main_futures_ex:
-            logger.warning(f"Не вдалося створити екземпляр біржі для {exchange_name}")
-            return []
-
-        # Завантажуємо ринки РІЗНО для spot та futures
-        spot_markets   = spot_ex.load_markets()   if spot_ex   else {}
-        futures_markets = main_futures_ex.load_markets()
-
-        # Фільтруємо тільки активні perpetual swaps (безстрокові)
         perpetual_markets = {
             s: m for s, m in futures_markets.items()
-            if m.get('swap') 
-               and m.get('active', True) 
-               and not m.get('expiry')           # безстрокові
-               and m['contract']                 # додаткова перевірка
+            if m.get('swap')
+               and m.get('active', True)
+               and m.get('contract')
         }
 
-        # Словник для нормалізованих символів (BTC/USDT тощо)
-        symbol_data = {}  # "BTC/USDT" → рядок даних
+        # ========= FUTURES TICKERS =========
 
-        # ─── 1. Спочатку збираємо дані по perpetual futures ───
+        futures_tickers = {}
+        try:
+            if futures_ex.has.get('fetchTickers'):
+                futures_tickers = futures_ex.fetch_tickers()
+        except Exception:
+            pass
+
+        # fallback
+        if not futures_tickers:
+            for s in perpetual_markets:
+                try:
+                    futures_tickers[s] = futures_ex.fetch_ticker(s)
+                except Exception:
+                    pass
+
+        # ========= SPOT TICKERS =========
+
+        spot_tickers = {}
+
+        try:
+            if spot_ex.has.get('fetchTickers'):
+                spot_tickers = spot_ex.fetch_tickers()
+        except Exception:
+            pass
+
+        if not spot_tickers:
+            for s, m in spot_markets.items():
+                if not m.get('spot'):
+                    continue
+                try:
+                    spot_tickers[s] = spot_ex.fetch_ticker(s)
+                except Exception:
+                    pass
+
+        # ========= DATA =========
+
+        symbol_data = {}
+
+        # ---------- FUTURES ----------
         for perp_symbol, perp_market in perpetual_markets.items():
-            base  = perp_market['base']
+
+            base = perp_market['base']
             quote = perp_market['quote']
+            #norm_symbol = perp_symbol
             norm_symbol = f"{base}/{quote}"
 
-            if norm_symbol not in symbol_data:
-                symbol_data[norm_symbol] = {
-                    'exchange': exchange_name,
-                    'symbol': norm_symbol,
-                    'funding_rate': None,
-                    'next_funding_utc': None,
-                    'countdown_sec': None,
-                    'spot_bid': None,
-                    'spot_ask': None,
-                    'futures_bid': None,
-                    'futures_ask': None,
-                    'has_spot': False,
-                    'has_futures': True,
-                    'funding_timestamp_utc': timestamp
-                }
+            row = symbol_data.setdefault(norm_symbol, {
+                'exchange': exchange_name,
+                'symbol': norm_symbol,
+                'funding_rate': None,
+                'next_funding_utc': None,
+                'countdown_sec': None,
+                'spot_bid': None,
+                'spot_ask': None,
+                'futures_bid': None,
+                'futures_ask': None,
+                'has_spot': False,
+                'has_futures': True,
+                'funding_timestamp_utc': timestamp
+            })
 
-            row = symbol_data[norm_symbol]
+            # ===== FUTURES PRICE =====
 
-            # Funding rate + наступний funding
-            try:
-                fr_ex = main_futures_ex
-                fr_data = fr_ex.fetch_funding_rate(perp_symbol)
-                fr = decimal.Decimal(str(fr_data.get('fundingRate') or fr_data.get('lastFundingRate') or 0))
-                if fr != 0:
-                    row['funding_rate'] = float(fr)
-
-                next_ts = extract_next_funding_ts(fr_data)
-                if next_ts:
-                    ts_value = float(next_ts)
-                    divisor = 1000 if ts_value > 1e10 else 1
-                    next_dt = datetime.fromtimestamp(ts_value / divisor, tz=timezone.utc)
-                    countdown = max(0, (next_dt - datetime.now(timezone.utc)).total_seconds())
-                    row['next_funding_utc'] = next_dt.isoformat()
-                    row['countdown_sec'] = countdown
-            except Exception as e:
-                logger.debug(f"Funding rate error {perp_symbol} on {exchange_name}: {e}")
-
-            # Futures bid/ask
-            try:
-                ticker = main_futures_ex.fetch_ticker(perp_symbol)
+            ticker = futures_tickers.get(perp_symbol)
+            if ticker:
                 row['futures_bid'] = ticker.get('bid')
                 row['futures_ask'] = ticker.get('ask')
-            except Exception:
-                pass
+                
+            #print(ticker)
+            #exit()
 
-        # ─── 2. Додаємо/оновлюємо spot-ринки ───
+            # ===== FUNDING SYMBOL MAP =====
+
+            funding_symbol = None
+
+            # пробуємо прямий
+            if perp_symbol in futures_ex.markets:
+                funding_symbol = perp_symbol
+
+            # пробуємо нормалізований
+            elif norm_symbol in futures_ex.markets:
+                funding_symbol = norm_symbol
+
+            # пробуємо id
+            else:
+                mid = perp_market.get('id')
+                for s2, m2 in futures_ex.markets.items():
+                    if m2.get('id') == mid:
+                        funding_symbol = s2
+                        break
+
+            # ===== FUNDING =====
+            #print('funding_symbol', funding_symbol)
+            if funding_symbol:
+                try:
+                    fr_data = futures_ex.fetch_funding_rate(funding_symbol)
+                    #print('fr_data', fr_data)
+                    #exit()
+                    if fr_data is None:
+                        continue
+
+                    fr = fr_data.get('fundingRate') \
+                         or fr_data.get('lastFundingRate')
+
+                    if fr:
+                        row['funding_rate'] = float(fr)
+
+                    next_ts = extract_next_funding_ts(fr_data)
+
+                    if next_ts:
+                        ts_value = float(next_ts)
+                        divisor = 1000 if ts_value > 1e10 else 1
+
+                        next_dt = datetime.fromtimestamp(
+                            ts_value / divisor,
+                            tz=timezone.utc
+                        )
+
+                        row['next_funding_utc'] = next_dt.isoformat()
+                        row['countdown_sec'] = max(
+                            0,
+                            (next_dt - datetime.now(timezone.utc))
+                            .total_seconds()
+                        )
+
+                except Exception as e:
+                    print(f"{exchange_name} funding error:", funding_symbol, str(e)[:120])
+
+        # ---------- SPOT ----------
         for sym, m in spot_markets.items():
-            if not m.get('spot') or not m.get('active', True):
+
+            if not m.get('spot'):
                 continue
 
-            base  = m['base']
+            base = m['base']
             quote = m['quote']
             norm_symbol = f"{base}/{quote}"
 
-            if norm_symbol not in symbol_data:
-                symbol_data[norm_symbol] = {
-                    'exchange': exchange_name,
-                    'symbol': norm_symbol,
-                    'funding_rate': None,
-                    'next_funding_utc': None,
-                    'countdown_sec': None,
-                    'spot_bid': None,
-                    'spot_ask': None,
-                    'futures_bid': None,
-                    'futures_ask': None,
-                    'has_spot': True,
-                    'has_futures': False,
-                    'funding_timestamp_utc': timestamp
-                }
+            row = symbol_data.setdefault(norm_symbol, {
+                'exchange': exchange_name,
+                'symbol': norm_symbol,
+                'funding_rate': None,
+                'next_funding_utc': None,
+                'countdown_sec': None,
+                'spot_bid': None,
+                'spot_ask': None,
+                'futures_bid': None,
+                'futures_ask': None,
+                'has_spot': True,
+                'has_futures': False,
+                'funding_timestamp_utc': timestamp
+            })
 
-            row = symbol_data[norm_symbol]
             row['has_spot'] = True
 
-            # Spot bid/ask
-            try:
-                spot_ticker = spot_ex.fetch_ticker(sym)
-                row['spot_bid'] = spot_ticker.get('bid')
-                row['spot_ask'] = spot_ticker.get('ask')
-            except Exception:
-                pass
+            ticker = spot_tickers.get(sym)
+            if ticker:
+                row['spot_bid'] = ticker.get('bid')
+                row['spot_ask'] = ticker.get('ask')
 
-        # ─── 3. Перетворюємо в список ───
         results = list(symbol_data.values())
 
         duration = time.perf_counter() - start_time
         exchange_times[exchange_name] = duration
 
-        both_count = sum(1 for r in results if r['has_spot'] and r['has_futures'])
-        logger.info(f"{exchange_name:12} {duration:6.1f}s   rows: {len(results):5} "
-                    f"(з обома ринками: {both_count:4})")
+        both_count = sum(
+            1 for r in results if r['has_spot'] and r['has_futures']
+        )
+
+        logger.info(
+            f"{exchange_name:8} {duration:4.1f}s {len(results):4}/{both_count:3} rows (all/both markets)"
+        )
 
         return results
 
     except Exception as e:
+
         duration = time.perf_counter() - start_time
         exchange_times[exchange_name] = duration
-        logger.error(f"{exchange_name} failed after {duration:.1f}s: {str(e)[:180]}")
+
+        logger.error(
+            f"{exchange_name} failed after {duration:.1f}s: {str(e)[:180]}"
+        )
+
         return []
         
 
@@ -488,7 +744,11 @@ def main():
     build_exchange_pairs()
     
     to_run = get_exchanges_to_run()
-    logger.info(f"Бірж для обробки: {len(to_run)} → {', '.join(to_run[:5]  +  ['..' ]+ to_run[-5:])}")
+    if len(to_run) <= 10:
+        display = ', '.join(to_run)
+    else:
+        display = ', '.join(to_run[:5] + ['..'] + to_run[-5:])
+    logger.info(f"Біржі для обробки ({len(to_run)}): {display}")
 
     # Запускаємо моніторинговий потік
     monitor = threading.Thread(target=monitoring_thread, daemon=True)
@@ -508,7 +768,7 @@ def main():
             try:
                 data = future.result()
                 if data:
-                    all_rows.extend(data)
+                    all_rows.extend(data[:2])
                     #logger.info(f"{ex}: {len(data)} recs")
             except Exception as e:
                 logger.error(f"{ex}: помилка {e}")
