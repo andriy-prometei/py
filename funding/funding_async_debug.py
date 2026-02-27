@@ -1,9 +1,12 @@
-# funding_raw_debug.py
-import ccxt
+import ccxt.async_support as ccxt
+import asyncio
 import json
-import os
 from datetime import datetime, timezone
 from pathlib import Path
+
+OUTPUT_DIR = Path("funding_async_debug")
+OUTPUT_DIR.mkdir(exist_ok=True)
+
 
 # Список бірж, де next_funding_utc = None
 PROBLEM_EXCHANGES = [
@@ -110,8 +113,6 @@ PROBLEM_EXCHANGES = [
     "alpaca",
 ]
 
-OUTPUT_DIR = Path("funding_raw_debug")
-OUTPUT_DIR.mkdir(exist_ok=True)
 
 # ---------- Патчі для парсингу nextFunding (ідентичні оригіналу) ----------
 def patch_funding_parsers():
@@ -373,114 +374,211 @@ def _ts_to_iso(ts):
     except Exception:
         return None
 
+# =========================================================
+# MAIN ASYNC DEBUG FUNCTION
+# =========================================================
+async def debug_exchange_async(exchange_name: str, max_symbols: int = 10):
 
-def debug_funding_data(exchange_name: str, max_symbols: int = 5):
-    print(f"\n{'='*60}")
-    print(f"   {exchange_name.upper()}")
-    print(f"{'='*60}")
+    results = {}
+    exchange_log = {
+        "exchange": exchange_name,
+        "calls": []
+    }
 
-    ex = None
+    now_ms = int(datetime.utcnow().timestamp() * 1000)
+
+    # ---------- FUTURES CLIENT ----------
+    futures = getattr(ccxt, exchange_name)({
+        "enableRateLimit": True,
+        "options": {"defaultType": "swap"},
+    })
+
+    # ---------- SPOT CLIENT (fallback) ----------
+    spot = getattr(ccxt, exchange_name)({
+        "enableRateLimit": True,
+        "options": {"defaultType": "spot"},
+    })
+
     try:
-        ex = getattr(ccxt, exchange_name)({
-            'enableRateLimit': True,
-            'timeout': 30000,
-            'options': {'defaultType': 'swap'},
+        # =====================================================
+        # LOAD MARKETS
+        # =====================================================
+        markets = await futures.load_markets()
+        exchange_log["calls"].append({
+            "method": "load_markets",
+            "args": {},
+            "returned_markets_count": len(markets)
         })
 
-        results = {}
-
-        print("\nЗавантаження ринків...")
-        markets = ex.load_markets()
-
-        # --- PERP MARKETS ---
         perps = [
-            sym for sym, m in markets.items()
-            if m.get('swap') and m.get('active', False) and not m.get('expiry')
+            s for s, m in markets.items()
+            if m.get("swap") and m.get("active") and not m.get("expiry")
         ]
 
-        if not perps:
-            print("Swap контракти не знайдено.")
-            return
+        symbols = perps[:max_symbols]
 
-        symbols_to_check = perps[:max_symbols]
-        print("Символи:", symbols_to_check)
+        # =====================================================
+        # BULK FUNDING
+        # =====================================================
+        funding_bulk = {}
 
-        for symbol in symbols_to_check:
+        try:
+            funding_bulk = await futures.fetch_funding_rates(symbols)
+            exchange_log["calls"].append({
+                "method": "fetch_funding_rates",
+                "args": {"symbols": symbols},
+                "returned_count": len(funding_bulk)
+            })
+        except Exception as e:
+            exchange_log["calls"].append({
+                "method": "fetch_funding_rates",
+                "error": str(e)
+            })
+
+        # fallback to single
+        if not funding_bulk:
+            funding_bulk = {}
+            for s in symbols:
+                try:
+                    fr = await futures.fetch_funding_rate(s)
+                    funding_bulk[s] = fr
+                    exchange_log["calls"].append({
+                        "method": "fetch_funding_rate",
+                        "args": {"symbol": s},
+                        "returned": True
+                    })
+                except Exception as e:
+                    exchange_log["calls"].append({
+                        "method": "fetch_funding_rate",
+                        "args": {"symbol": s},
+                        "error": str(e)
+                    })
+
+        # =====================================================
+        # BULK ORDERBOOKS (ASYNC GATHER)
+        # =====================================================
+        async def get_futures_ob(symbol):
             try:
-                # ---------------- FUNDING ----------------
-                fr_data = ex.fetch_funding_rate(symbol)
-
-                # ---------------- FUTURES ORDERBOOK ----------------
-                futures_ob = ex.fetch_order_book(symbol, limit=5)
-
-                futures_bid = futures_ob['bids'][0][0] if futures_ob['bids'] else None
-                futures_ask = futures_ob['asks'][0][0] if futures_ob['asks'] else None
-
-                # ---------------- SPOT ORDERBOOK ----------------
-                spot_bid = None
-                spot_ask = None
-
-                base_symbol = symbol.split(":")[0]  # BTC/USDT:USDT → BTC/USDT
-
-                if base_symbol in markets and markets[base_symbol].get("spot"):
-                    try:
-                        spot_ob = ex.fetch_order_book(base_symbol, limit=5)
-                        spot_bid = spot_ob['bids'][0][0] if spot_ob['bids'] else None
-                        spot_ask = spot_ob['asks'][0][0] if spot_ob['asks'] else None
-                    except Exception:
-                        pass
-
-                key = f"{symbol}__funding_spot_futures"
-
-                results[key] = {
-                    "fetched_at": datetime.utcnow().isoformat() + "Z",
-                    "symbol": symbol,
-
-                    # funding
-                    "funding_rate": fr_data.get("fundingRate"),
-                    "last_funding_rate": fr_data.get("lastFundingRate"),
-                    "next_funding_timestamp": fr_data.get("nextFundingTimestamp"),
-
-                    # futures
-                    "futures_bid": futures_bid,
-                    "futures_ask": futures_ask,
-
-                    # spot
-                    "spot_bid": spot_bid,
-                    "spot_ask": spot_ask,
-
-                    # raw
-                    "raw_funding_response": fr_data,
-                }
-
-                print(
-                    f"✓ {symbol:20} | FR={fr_data.get('fundingRate')} "
-                    f"| F_bid={futures_bid} | S_bid={spot_bid}"
-                )
-
+                ob = await futures.fetch_order_book(symbol, 20)
+                return symbol, ob, None
             except Exception as e:
-                print(f"✗ {symbol:20} → {type(e).__name__}: {e}")
+                return symbol, None, str(e)
 
-        _save_results(exchange_name, results)
+        futures_tasks = [get_futures_ob(s) for s in symbols]
+        futures_orderbooks = await asyncio.gather(*futures_tasks)
 
-    except Exception as e:
-        print(f"Критична помилка {exchange_name}: {e}")
+        # =====================================================
+        # PROCESS EACH SYMBOL
+        # =====================================================
+        for symbol in symbols:
 
+            fr_raw = funding_bulk.get(symbol)
+            futures_ob_raw = None
+            futures_best_bid = None
+            futures_best_ask = None
 
-def _save_results(exchange_name: str, results: dict):
-    """Зберігає результати у файл JSON."""
-    if results:
+            # ---- funding values ----
+            funding_rate = None
+            next_ts = None
+            seconds_left = None
+
+            if fr_raw:
+                funding_rate = fr_raw.get("fundingRate")
+                next_ts = fr_raw.get("nextFundingTimestamp")
+
+                if next_ts:
+                    seconds_left = int((next_ts - now_ms) / 1000)
+
+            # ---- futures OB ----
+            for s, ob, err in futures_orderbooks:
+                if s == symbol:
+                    futures_ob_raw = ob
+                    if ob:
+                        futures_best_bid = ob["bids"][0][0] if ob["bids"] else None
+                        futures_best_ask = ob["asks"][0][0] if ob["asks"] else None
+
+            # =====================================================
+            # SPOT ORDERBOOK (try futures client first)
+            # =====================================================
+            base_symbol = symbol.split(":")[0]
+            spot_ob_raw = None
+            spot_best_bid = None
+            spot_best_ask = None
+
+            try:
+                spot_ob_raw = await futures.fetch_order_book(base_symbol, 20)
+                exchange_log["calls"].append({
+                    "method": "fetch_order_book",
+                    "args": {"symbol": base_symbol, "via": "futures_client"}
+                })
+            except:
+                try:
+                    spot_ob_raw = await spot.fetch_order_book(base_symbol, 20)
+                    exchange_log["calls"].append({
+                        "method": "fetch_order_book",
+                        "args": {"symbol": base_symbol, "via": "spot_client"}
+                    })
+                except Exception as e:
+                    exchange_log["calls"].append({
+                        "method": "fetch_order_book",
+                        "args": {"symbol": base_symbol},
+                        "error": str(e)
+                    })
+
+            if spot_ob_raw:
+                spot_best_bid = spot_ob_raw["bids"][0][0] if spot_ob_raw["bids"] else None
+                spot_best_ask = spot_ob_raw["asks"][0][0] if spot_ob_raw["asks"] else None
+
+            # =====================================================
+            # SAVE STRUCTURE
+            # =====================================================
+            results[symbol] = {
+                "fetched_at": datetime.utcnow().isoformat() + "Z",
+                "symbol": symbol,
+
+                "funding_rate": funding_rate,
+                "next_funding_timestamp": next_ts,
+                "seconds_to_next_funding": seconds_left,
+
+                "futures_best_bid": futures_best_bid,
+                "futures_best_ask": futures_best_ask,
+
+                "spot_best_bid": spot_best_bid,
+                "spot_best_ask": spot_best_ask,
+
+                "raw_funding": fr_raw,
+                "raw_futures_orderbook": futures_ob_raw,
+                "raw_spot_orderbook": spot_ob_raw,
+            }
+
+        # =====================================================
+        # SAVE JSON
+        # =====================================================
         ts = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
-        filename = OUTPUT_DIR / f"{exchange_name}_{ts}.json"
+        filename = OUTPUT_DIR / f"{exchange_name}_bulk_async_full_debug_{ts}.json"
+
         with open(filename, "w", encoding="utf-8") as f:
-            json.dump(results, f, ensure_ascii=False, indent=2, default=str)
-        print(f"Збережено → {filename}")
-    else:
-        print("Не вдалося отримати жодного funding rate")
+            json.dump({
+                "exchange_log": exchange_log,
+                "symbols_data": results
+            }, f, indent=2, default=str)
+
+        print(f"✅ Saved {filename}")
+
+    finally:
+        await futures.close()
+        await spot.close()
 
 
-if __name__ == "__main__":
+# =========================================================
+# RUN ALL
+# =========================================================
+async def main():
     for exch in PROBLEM_EXCHANGES:
-        debug_funding_data(exch, max_symbols=4)
-    print("\nГотово. Файли збережено в папку:", OUTPUT_DIR.resolve())
-    
+        print(f"\n==== {exch} ====")
+        try:
+            await debug_exchange_async(exch, max_symbols=5)
+        except Exception as e:
+            print("Fatal:", e)
+
+asyncio.run(main())

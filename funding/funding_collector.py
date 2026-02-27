@@ -13,113 +13,119 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 ====================
 за часом обробки (секунди):
 --------------------
-   709.2 с   bitmart
-   397.7 с   bitget
-   375.7 с   binance
-   366.0 с   bingx
-   365.4 с   mexc
-   344.0 с   bybit
-   335.7 с   phemex
-   322.9 с   gate
-   309.5 с   xt
-   298.8 с   bydfi
-   291.8 с   deepcoin
-   267.0 с   kucoin
-   246.5 с   aster
-   239.1 с   bitmex
-   235.2 с   blofin
-   216.4 с   kraken
-   208.8 с   bitso
-   182.7 с   cryptocom
-   181.5 с   ascendex
-   179.9 с   independentreserve
-   171.3 с   htx
-   170.2 с   huobi
-   150.5 с   okx
-   144.3 с   woo
-   117.1 с   whitebit
-    93.8 с   digifinex
-    90.4 с   bitfinex
-    88.1 с   ndax
-    82.1 с   bitrue
-    82.1 с   backpack
-    80.2 с   delta
-    70.9 с   coinex
-    69.4 с   coinbase
-    63.1 с   deribit
-    57.0 с   cex
-    53.1 с   derive
-    46.5 с   bigone
-    42.3 с   hyperliquid
-    38.8 с   coinspot
-    35.4 с   coincatch
-    33.7 с   zaif
-    33.0 с   wavesexchange
-    30.7 с   defx
-    28.2 с   fmfwio
-    24.1 с   btcturk
-    21.5 с   bitstamp
-    20.5 с   coinsph
-    18.3 с   bequant
-    17.2 с   hashkey
-    16.7 с   apex
-    14.5 с   hitbtc
-    14.2 с   foxbit
-    13.7 с   arkham
-    13.5 с   blockchaincom
-    13.2 с   bitbns
+  1382.5 с   binance
+  1214.0 с   bitmart
+   977.8 с   toobit
+   955.3 с   xt
+   921.1 с   phemex
+   858.0 с   coinbase
+   828.7 с   coinex
+   800.3 с   coinbaseadvanced
+   788.4 с   huobi
+   758.6 с   bingx
+   754.7 с   htx
+   647.4 с   bydfi
+   643.6 с   kucoin
+   542.9 с   mexc
+   476.3 с   coinbaseexchange
+   415.0 с   ascendex
+   373.4 с   blofin
+   361.6 с   upbit
+   333.1 с   kraken
+   332.0 с   aster
+   265.0 с   whitebit
+   253.8 с   bitget
+   243.9 с   okxus
+   232.9 с   gateio
+   224.0 с   gate
+   216.7 с   cryptocom
+   214.9 с   bitso
+   196.2 с   backpack
+   193.3 с   independentreserve
+   136.7 с   okx
+   131.6 с   blockchaincom
+   126.9 с   apex
+   123.2 с   bybit
+   116.2 с   arkham
+   115.5 с   bigone
+   105.8 с   bitrue
+   104.4 с   cryptomus
+   104.0 с   hashkey
+   100.9 с   digifinex
+    98.6 с   ndax
+    94.8 с   latoken
+    88.9 с   myokx
+    87.2 с   bitfinex
+    83.4 с   deribit
+    81.4 с   poloniex
+    59.8 с   derive
+    55.7 с   hitbtc
+    55.5 с   alp
+    54.8 с   hollaex
+    52.6 с   cex
+    50.7 с   bitmex
+    44.0 с   coinsph
+    41.2 с   onetrading
+    41.1 с   fmfwio
+    40.6 с   bitstamp
+    38.3 с   coinbaseinternational
+    38.1 с   timex
+    37.8 с   zaif
+    35.4 с   deepcoin
+    34.8 с   bitteam
+    33.9 с   bitopro
+    33.8 с   foxbit
+    28.0 с   defx
+    27.8 с   novadax
+    27.1 с   coinspot
+    23.4 с   coincatch
+    22.7 с   wavesexchange
+    22.6 с   delta
+    21.8 с   bequant
+    19.3 с   bitbns
+    18.3 с   lbank
+    15.8 с   modetrade
+    15.4 с   btcturk
+    14.3 с   p2b
+    13.9 с   paradex
     13.2 с   exmo
-    13.0 с   alp
-    12.5 с   bitteam
-    11.4 с   poloniex
-    11.2 с   bit2c
-    10.8 с   cryptomus
-     8.8 с   dydx
-     8.4 с   bitopro
-     7.6 с   latoken
-     7.2 с   woofipro
-     6.8 с   gemini
-     6.6 с   toobit
-     5.6 с   timex
-     5.2 с   upbit
-     4.4 с   hollaex
-     4.4 с   onetrading
-     3.9 с   modetrade
-     3.9 с   paradex
-     3.7 с   zebpay
-     3.7 с   btcbox
-     3.5 с   bullish
-     3.4 с   bitvavo
-     3.3 с   coinone
-     3.2 с   btcmarkets
-     3.0 с   bittrade
-     2.8 с   coincheck
-     2.8 с   zonda
-     2.8 с   p2b
-     2.4 с   bithumb
-     2.3 с   lbank
-     2.2 с   novadax
-     2.0 с   bitflyer
-     1.7 с   alpaca
+    10.7 с   dydx
+    10.4 с   bit2c
+     6.1 с   woo
+     6.1 с   woofipro
+     5.3 с   indodax
+     5.2 с   btcbox
+     4.9 с   gemini
+     3.8 с   btcmarkets
+     3.5 с   zonda
+     3.1 с   bittrade
+     2.8 с   zebpay
+     2.8 с   bithumb
+     2.5 с   coinone
+     2.5 с   mercado
+     2.4 с   oxfun
+     2.4 с   binanceus
+     2.4 с   bitvavo
+     2.3 с   paymium
+     2.2 с   bullish
+     2.1 с   hibachi
+     2.0 с   coincheck
+     1.9 с   luno
      1.7 с   bitbank
-     1.0 с   indodax
-     0.9 с   paymium
-     0.5 с   mercado
-     0.4 с   oxfun
-     0.4 с   luno
-     0.4 с   hibachi
+     1.6 с   bitflyer
+     0.9 с   alpaca
 ====================
 """
 
-# Приклади використання (змініть на свої потреби)
-WHITELIST = []#['ascendex', 'aster', 'backpack', 'binance', 'bingx', 'bitfinex', 'bitget', 'bitmart', 'bitmex', 'bybit', 'bydfi', 'coinbase', 'coinex', 'deribit', 'digifinex', 'hashkey', 'huobi', 'hyperliquid', 'gate', 'kraken', 'kucoin', 'lbank', 'mexc', 'okx', 'poloniex', 'toobit', 'woo', 'whitebit', 'xt'] # якщо заповнити — запускатимуться ТІЛЬКИ ці біржі
+# використання
+WHITELIST = []#['ascendex', 'aster', 'backpack', 'binance', 'bingx', 'bitfinex', 'bitget', 'bitmart', 'bitmex', 'bybit', 'bydfi', 'coinbase', 'coinex', 'deribit', 'digifinex', 'hashkey', 'huobi', 'gate', 'kraken', 'kucoin', 'lbank', 'mexc', 'okx', 'poloniex', 'toobit', 'woo', 'whitebit', 'xt'] # якщо заповнити — запускатимуться ТІЛЬКИ ці біржі
 BLACKLIST = [
-    'binancecoinm', 'binanceus',
-    'testnet', 'sandbox', 'demo',   # тестові
-    'okxus', 'myokx', #okx aliases
-    'gateio', # alias to gate
-    'coinbaseadvanced', 'coinbaseinternational', 'coinbaseexchange', # alias to coinbase
-    'tokocrypto', 'yobit', # slow data extraction
+    #'binancecoinm', 'binanceus',
+    #'testnet', 'sandbox', 'demo',   # тестові
+    #'okxus', 'myokx', #okx aliases
+    #'gateio', # alias to gate
+    #'coinbaseadvanced', 'coinbaseinternational', 'coinbaseexchange', # alias to coinbase
+    'hyperliquid', 'tokocrypto', 'yobit', # slow data extraction
 ]
 
 # Автоматичні пропуски (futures-класи, які дублюють unified)
@@ -168,13 +174,18 @@ def patch_funding_parsers():
         def patched_bitget(self, info, market=None):
             parsed = original_bitget(self, info, market)
 
-            if isinstance(info, dict) and info.get("nextUpdate"):
-                try:
-                    ts = int(info["nextUpdate"])
-                    parsed["nextFundingTimestamp"] = ts
-                    parsed["nextFundingDatetime"] = _ts_to_iso(ts)
-                except Exception:
-                    pass
+            raw = info or {}
+
+            # ---- next funding timestamp fallback ----
+            if parsed.get("nextFundingTimestamp") is None:
+                next_update = raw.get("nextUpdate")
+                if next_update:
+                    try:
+                        ts = int(next_update)
+                        parsed["nextFundingTimestamp"] = ts
+                        parsed["nextFundingDatetime"] = _ts_to_iso(ts)
+                    except Exception:
+                        pass
 
             return parsed
 
@@ -225,6 +236,53 @@ def patch_funding_parsers():
             return parsed
 
         ccxt.bitmex.parse_funding_rate = patched_bitmex
+        
+    # ===========
+    # DELTA
+    # ===========
+    if hasattr(ccxt, "delta"):
+        original_delta = ccxt.delta.parse_funding_rate
+
+        def patched_delta(self, info, market=None):
+            parsed = original_delta(self, info, market)
+
+            raw = info or {}
+            quotes = raw.get("quotes") or {}
+
+            best_bid = quotes.get("best_bid")
+            best_ask = quotes.get("best_ask")
+            bid_size = quotes.get("bid_size")
+            ask_size = quotes.get("ask_size")
+
+            # ---- price ----
+            if best_bid is not None:
+                try:
+                    parsed["bid"] = float(best_bid)
+                except Exception:
+                    pass
+
+            if best_ask is not None:
+                try:
+                    parsed["ask"] = float(best_ask)
+                except Exception:
+                    pass
+
+            # ---- volumes ----
+            if bid_size is not None:
+                try:
+                    parsed["bid_vol"] = float(bid_size)
+                except Exception:
+                    pass
+
+            if ask_size is not None:
+                try:
+                    parsed["ask_vol"] = float(ask_size)
+                except Exception:
+                    pass
+
+            return parsed
+
+        ccxt.delta.parse_funding_rate = patched_delta
 
     # ===========
     # GATE
@@ -272,6 +330,39 @@ def patch_funding_parsers():
             return parsed
 
         ccxt.huobi.parse_funding_rate = patched_huobi
+
+    # ===========
+    # PHEMEX
+    # ===========
+    if hasattr(ccxt, "phemex"):
+        original_phemex = ccxt.phemex.parse_funding_rate
+
+        def patched_phemex(self, info, market=None):
+            parsed = original_phemex(self, info, market)
+
+            raw = info or {}
+
+            bid_ep = raw.get("bidEp")
+            ask_ep = raw.get("askEp")
+
+            # Phemex prices are Ep = price * 1e4
+            scale = 10000.0
+
+            if bid_ep is not None:
+                try:
+                    parsed["bid"] = float(bid_ep) / scale
+                except Exception:
+                    pass
+
+            if ask_ep is not None:
+                try:
+                    parsed["ask"] = float(ask_ep) / scale
+                except Exception:
+                    pass
+
+            return parsed
+
+        ccxt.phemex.parse_funding_rate = patched_phemex
 
     # ===========
     # WHITEBIT
@@ -340,7 +431,7 @@ def monitoring_thread():
     while not done:
         elapsed = time.time() - start_time
 
-        if elapsed >= 300:
+        if elapsed >= 180:
             print_after_10min = True
 
         if print_after_10min and int(elapsed) % 60 == 0:
@@ -353,7 +444,7 @@ def monitoring_thread():
                 if len(active_list) <= 5:
                     active_str = ", ".join(active_list)
                 else:
-                    active_str = f"{len(active_list)} бірж ({', '.join(active_list[:5])}...)"
+                    active_str = f"({', '.join(active_list[:10])}...)"
                 print(f"[{now_str}] Залишилось ({len(active_tasks)}): {active_str}")
 
 
@@ -429,29 +520,56 @@ def build_exchange_pairs():
 
     logger.info(f"Виявлені пари бірж (spot → futures): {EXCHANGE_PAIRS}")
 
-# ==== Допоміжна функція для next funding time ====
+# ==== helper for next funding time ====
 def extract_next_funding_ts(data):
+    if not data:
+        return None
+
+    # порядок важливий — найчастіші ключі ставимо першими
+    keys = (
+        'nextFundingTime',
+        'nextFundingTimestamp',
+        'fundingTimestamp',
+        'nextSettleTime',
+        'fundingNext',
+        'nextFunding',
+        'fundingTimeNext',
+        'settleTime',
+    )
+
     next_ts = None
-    for k in [
-        'nextFundingTime', 'nextFundingTimestamp', 'fundingTimestamp',
-        'nextSettleTime', 'fundingNext', 'nextFunding',
-        'fundingTimeNext', 'settleTime'
-    ]:
-        if k in data and data[k]:
-            next_ts = data[k]
+
+    # 1️⃣ перевірка верхнього рівня
+    for k in keys:
+        v = data.get(k)
+        if v:
+            next_ts = v
             break
 
-    if next_ts is None and 'info' in data:
-        info = data['info']
-        next_ts = (
-            info.get('nextFundingTime') or
-            info.get('nextFundingTimestamp') or
-            info.get('fundingTimestamp') or
-            info.get('nextSettleTime') or
-            info.get('fundingNext')
-        )
+    # 2️⃣ якщо не знайшли — дивимось у info
+    if next_ts is None:
+        info = data.get('info')
+        if isinstance(info, dict):
+            for k in keys:
+                v = info.get(k)
+                if v:
+                    next_ts = v
+                    break
 
-    return next_ts
+    if next_ts is None:
+        return None
+
+    # 3️⃣ швидка безпечна конвертація
+    try:
+        ts_val = float(next_ts)
+    except (TypeError, ValueError):
+        return None
+
+    # якщо мілісекунди
+    if ts_val > 1e11:
+        ts_val /= 1000
+
+    return int(ts_val)
 
 # ==== Основна функція збору даних ====
 def fetch_exchange_data(exchange_name):
@@ -467,13 +585,12 @@ def fetch_exchange_data(exchange_name):
         spot_class_name = exchange_name
         futures_class_name = EXCHANGE_PAIRS.get(exchange_name)
 
-        # ========= CLIENTS =========
-        
         spot_ex = getattr(ccxt, spot_class_name)({
             'enableRateLimit': True,
             'timeout': 30000,
             'options': {'defaultType': 'spot'}
         })
+
         futures_ex = getattr(
             ccxt,
             futures_class_name or spot_class_name
@@ -483,70 +600,91 @@ def fetch_exchange_data(exchange_name):
             'options': {'defaultType': 'swap'}
         })
 
-        # ========= MARKETS =========
-
         spot_markets = spot_ex.load_markets()
         futures_markets = futures_ex.load_markets()
-        #print(futures_markets['BTC/USDT:USDT'])
 
         perpetual_markets = {
             s: m for s, m in futures_markets.items()
-            if m.get('swap')
-               and m.get('active', True)
-               and m.get('contract')
+            if m.get('swap') and m.get('contract') and m.get('active', True)
         }
 
-        # ========= FUTURES TICKERS =========
+        # ==== BULK FUNDING COLLECTION ===
+
+        funding_cache = {}
+        funding_disabled = False
+
+        try:
+            bulk = futures_ex.fetch_funding_rates()
+            if bulk and isinstance(bulk, dict):
+                funding_cache = bulk
+        except Exception:
+            pass
+
+        # --- fallback на перші 10 ---
+        if not funding_cache:
+            zero_count = 0
+            bad_next_count = 0
+            tested = 0
+
+            for symbol in list(perpetual_markets.keys())[:10]:
+                try:
+                    fr = futures_ex.fetch_funding_rate(symbol)
+                    if not fr:
+                        continue
+
+                    funding_cache[symbol] = fr
+                    tested += 1
+
+                    rate = fr.get("fundingRate") or fr.get("lastFundingRate")
+                    next_ts = extract_next_funding_ts(fr)
+
+                    if not rate or float(rate) == 0:
+                        zero_count += 1
+
+                    if not next_ts:
+                        bad_next_count += 1
+                    else:
+                        ts_val = float(next_ts)
+                        if ts_val < time.time():
+                            bad_next_count += 1
+
+                except Exception:
+                    continue
+
+            if tested == 0 or (
+                tested >= 10 and
+                zero_count >= 10 and
+                bad_next_count >= 10
+            ):
+                funding_disabled = True
+
+        # === BULK TICKERS ===
 
         futures_tickers = {}
-        try:
-            if futures_ex.has.get('fetchTickers'):
-                futures_tickers = futures_ex.fetch_tickers()
-        except Exception:
-            pass
-
-        # fallback
-        if not futures_tickers:
-            for s in perpetual_markets:
-                try:
-                    futures_tickers[s] = futures_ex.fetch_ticker(s)
-                except Exception:
-                    pass
-
-        # ========= SPOT TICKERS =========
-
         spot_tickers = {}
-
+        
         try:
-            if spot_ex.has.get('fetchTickers'):
-                spot_tickers = spot_ex.fetch_tickers()
+            ft = futures_ex.fetch_tickers()
+            if isinstance(ft, dict):
+                futures_tickers = ft
         except Exception:
             pass
-
-        if not spot_tickers:
-            for s, m in spot_markets.items():
-                if not m.get('spot'):
-                    continue
-                try:
-                    spot_tickers[s] = spot_ex.fetch_ticker(s)
-                except Exception:
-                    pass
-
-        # ========= DATA =========
+        
+        try:
+            st = spot_ex.fetch_tickers()
+            if isinstance(st, dict):
+                spot_tickers = st
+        except Exception:
+            pass
 
         symbol_data = {}
-        
-        # ПЕРЕВІРКА ПІДТРИМКИ FUNDING RATE
-        can_fetch_funding = futures_ex.has.get('fetchFundingRate', False)
-        if not can_fetch_funding:
-            logger.warning(f"{exchange_name} does not support fetchFundingRate()")
 
-        # ---------- FUTURES ----------
+        # === FUTURES ===
+
         for perp_symbol, perp_market in perpetual_markets.items():
 
-            base = perp_market['base']
-            quote = perp_market['quote']
-            #norm_symbol = perp_symbol
+            base = perp_market["base"]
+            quote = perp_market["quote"]
             norm_symbol = f"{base}/{quote}"
 
             row = symbol_data.setdefault(norm_symbol, {
@@ -564,76 +702,65 @@ def fetch_exchange_data(exchange_name):
                 'funding_timestamp_utc': timestamp
             })
 
-            # ===== FUTURES PRICE =====
+            # ---- FUNDING ---
+            if not funding_disabled:
+                fr_data = funding_cache.get(perp_symbol)
 
-            ticker = futures_tickers.get(perp_symbol)
-            if ticker:
-                row['futures_bid'] = ticker.get('bid')
-                row['futures_ask'] = ticker.get('ask')
-                
-            #print(ticker)
-            #exit()
+                if not fr_data:
+                    try:
+                        fr_data = futures_ex.fetch_funding_rate(perp_symbol)
+                        funding_cache[perp_symbol] = fr_data
+                    except Exception:
+                        fr_data = None
 
-            # ===== FUNDING SYMBOL MAP =====
-
-            funding_symbol = None
-
-            # пробуємо прямий
-            if perp_symbol in futures_ex.markets:
-                funding_symbol = perp_symbol
-
-            # пробуємо нормалізований
-            elif norm_symbol in futures_ex.markets:
-                funding_symbol = norm_symbol
-
-            # пробуємо id
-            else:
-                mid = perp_market.get('id')
-                for s2, m2 in futures_ex.markets.items():
-                    if m2.get('id') == mid:
-                        funding_symbol = s2
-                        break
-
-            # ===== FUNDING =====
-            if funding_symbol and can_fetch_funding:
-                try:
-                    fr_data = futures_ex.fetch_funding_rate(funding_symbol)
-                    #print('fr_data', fr_data)
-                    #exit()
-                    if fr_data is None:
-                        continue
-
-                    fr = fr_data.get('fundingRate') \
-                         or fr_data.get('lastFundingRate')
-
-                    if fr:
-                        row['funding_rate'] = float(fr)
+                if fr_data:
+                    rate = fr_data.get("fundingRate") or fr_data.get("lastFundingRate")
+                    if rate:
+                        row["funding_rate"] = float(rate)
 
                     next_ts = extract_next_funding_ts(fr_data)
-
                     if next_ts:
-                        ts_value = float(next_ts)
-                        divisor = 1000 if ts_value > 1e10 else 1
-
-                        next_dt = datetime.fromtimestamp(
-                            ts_value / divisor,
-                            tz=timezone.utc
+                        ts_val = float(next_ts)
+                        next_dt = datetime.fromtimestamp(ts_val, tz=timezone.utc)
+                        row["next_funding_utc"] = next_dt.isoformat()
+                        row["countdown_sec"] = int(
+                            (next_dt - datetime.now(timezone.utc)).total_seconds()
                         )
 
-                        row['next_funding_utc'] = next_dt.isoformat()
-                        row['countdown_sec'] = int((next_dt - datetime.now(timezone.utc)).total_seconds())
+                    # пробуємо bid/ask з funding
+                    row["futures_bid"] = fr_data.get("bid") or row["futures_bid"]
+                    row["futures_ask"] = fr_data.get("ask") or row["futures_ask"]
 
-                except Exception as e:
-                    print(f"{exchange_name} funding error:", funding_symbol, str(e)[:120])
+            # --- FUTURES PRICE ---
+            if row["futures_bid"] is None or row["futures_ask"] is None:
+                # Спочатку перевіряємо bulk-тікери
+                ticker = futures_tickers.get(perp_symbol)
+                if ticker and (ticker.get("bid") is not None or ticker.get("ask") is not None):
+                    if row["futures_bid"] is None:
+                        row["futures_bid"] = ticker.get("bid")
+                    if row["futures_ask"] is None:
+                        row["futures_ask"] = ticker.get("ask")
+                else:
+                    # Якщо немає – індивідуальний запит
+                    try:
+                        ticker_ind = futures_ex.fetch_ticker(perp_symbol)
+                        if ticker_ind:
+                            if row["futures_bid"] is None:
+                                row["futures_bid"] = ticker_ind.get("bid")
+                            if row["futures_ask"] is None:
+                                row["futures_ask"] = ticker_ind.get("ask")
+                    except Exception:
+                        pass
 
-        # ---------- SPOT ----------
+        # === SPOT ===
+
         for sym, m in spot_markets.items():
 
-            if not m.get('spot'):
+            if not m.get("spot"):
                 continue
 
-            base = m['base']
-            quote = m['quote']
+            base = m["base"]
+            quote = m["quote"]
             norm_symbol = f"{base}/{quote}"
 
             row = symbol_data.setdefault(norm_symbol, {
@@ -651,24 +778,36 @@ def fetch_exchange_data(exchange_name):
                 'funding_timestamp_utc': timestamp
             })
 
-            row['has_spot'] = True
+            row["has_spot"] = True
 
-            ticker = spot_tickers.get(sym)
-            if ticker:
-                row['spot_bid'] = ticker.get('bid')
-                row['spot_ask'] = ticker.get('ask')
-
+            # --- SPOT PRICE ---
+            if row["spot_bid"] is None or row["spot_ask"] is None:
+                # Спочатку перевіряємо bulk-тікери
+                ticker = spot_tickers.get(sym)
+                if ticker and (ticker.get("bid") is not None or ticker.get("ask") is not None):
+                    if row["spot_bid"] is None:
+                        row["spot_bid"] = ticker.get("bid")
+                    if row["spot_ask"] is None:
+                        row["spot_ask"] = ticker.get("ask")
+                else:
+                    # Якщо немає – індивідуальний запит
+                    try:
+                        ticker_ind = spot_ex.fetch_ticker(sym)
+                        if ticker_ind:
+                            if row["spot_bid"] is None:
+                                row["spot_bid"] = ticker_ind.get("bid")
+                            if row["spot_ask"] is None:
+                                row["spot_ask"] = ticker_ind.get("ask")
+                    except Exception:
+                        pass
+        
         results = list(symbol_data.values())
 
         duration = time.perf_counter() - start_time
         exchange_times[exchange_name] = duration
 
-        both_count = sum(
-            1 for r in results if r['has_spot'] and r['has_futures']
-        )
-
         logger.info(
-            f"{exchange_name:8} {duration:4.1f}s {len(results):4}/{both_count:3} rows (all/both markets)"
+            f"{exchange_name:8} {duration:4.1f}s rows={len(results)}"
         )
 
         return results
@@ -683,7 +822,7 @@ def fetch_exchange_data(exchange_name):
         )
 
         return []
-        
+
 
 # ==== Основна функція ====
 def main():
